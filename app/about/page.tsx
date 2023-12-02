@@ -1,21 +1,24 @@
 "use client";
 import { Transistion } from "@/animation";
 import { useTransistion } from "@/hooks";
-export default function Home() {
+
+const About = () => {
   const { onTransistion } = useTransistion({});
 
   return (
-    <main>
+    <>
       <Transistion />
-      <div className="h-screen w-screen flex justify-center items-center">
+      <div className="h-screen w-screen  flex justify-center items-center">
         <button
           onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-            onTransistion("about")
+            onTransistion("/")
           }
         >
-          About
+          Home
         </button>
       </div>
-    </main>
+    </>
   );
-}
+};
+
+export default About;
