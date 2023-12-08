@@ -1,7 +1,7 @@
 "use client";
 import { useLayoutEffect } from "react";
-const Mouse = () => {
+const Video = () => {
   useLayoutEffect(() => {}, []);
-  return <div>Mouse</div>;
+  return <div>Video</div>;
 };
-export { Mouse };
+export { Video };

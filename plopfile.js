@@ -21,6 +21,14 @@ module.exports = function (plop) {
         templateFiles: `templates/components/*.hbs`,
         destination: "components/{{camelCase name}}",
       },
+      {
+        // Action type 'append' injects a template into an existing file
+        type: "append",
+        path: "./components/index.ts",
+        // Pattern tells plop where in the file to inject the template
+        pattern: `// Components`,
+        template: `export * from './{{camelCase name}}';`,
+      },
     ],
   });
 };
