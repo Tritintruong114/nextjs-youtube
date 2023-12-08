@@ -1,13 +1,13 @@
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
-interface UseTransistionProps {
-  onTransistion?: () => void;
+interface UseTransistionVerticalProps {
+  onTransistionVertical?: () => void;
   path?: string;
 }
-export const useTransistion = (props: UseTransistionProps) => {
+export const useTransistionVertical = (props: UseTransistionVerticalProps) => {
   const router = useRouter();
 
-  const onTransistion = (path: string) => {
+  const onTransistionVertical = (path: string) => {
     gsap.to(".menu", {
       duration: 1,
       height: "100%",
@@ -23,5 +23,5 @@ export const useTransistion = (props: UseTransistionProps) => {
     }, 1500);
   };
 
-  return { onTransistion };
+  return { onTransistionVertical };
 };

@@ -1,17 +1,17 @@
 "use client";
-import { Transistion } from "@/animation";
-import { useTransistion } from "@/hooks";
+import { TransitionVertical } from "@/animation";
+import { useTransistionVertical } from "@/hooks";
 
 const About = () => {
-  const { onTransistion } = useTransistion({});
+  const { onTransistionVertical } = useTransistionVertical({});
 
   return (
     <>
-      <Transistion />
+      <TransitionVertical />
       <div className="h-screen w-screen  flex justify-center items-center">
         <button
           onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-            onTransistion("/")
+            onTransistionVertical("/")
           }
         >
           Home

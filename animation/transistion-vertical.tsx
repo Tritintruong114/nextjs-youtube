@@ -2,7 +2,7 @@
 import gsap from "gsap";
 import { useLayoutEffect } from "react";
 
-const Transistion = () => {
+const TransitionVertical = () => {
   useLayoutEffect(() => {
     gsap.to(".menu", {
       duration: 1.5,
@@ -29,4 +29,4 @@ const Transistion = () => {
   );
 };
 
-export { Transistion };
+export { TransitionVertical };

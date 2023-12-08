@@ -1,21 +1,23 @@
 "use client";
-import { Transistion } from "@/animation";
-import { useTransistion } from "@/hooks";
+
+import { TransitionVertical } from "@/animation";
+import { useTransistionVertical } from "@/hooks";
+
 export default function Home() {
-  const { onTransistion } = useTransistion({});
+  const { onTransistionVertical } = useTransistionVertical({});
 
   return (
-    <main>
-      <Transistion />
-      <div className="h-screen w-screen flex justify-center items-center">
+    <>
+      <TransitionVertical />
+      <div className="h-screen w-screen  flex justify-center items-center">
         <button
           onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-            onTransistion("about")
+            onTransistionVertical("about")
           }
         >
           About
         </button>
       </div>
-    </main>
+    </>
   );
 }
