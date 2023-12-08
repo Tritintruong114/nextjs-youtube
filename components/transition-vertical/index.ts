@@ -1,2 +1,2 @@
-export * from "./use-transistion-dropdown";
+export * from "./transistion-vertical";
 export * from "./use-transistion-vertical";

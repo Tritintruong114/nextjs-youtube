@@ -1,6 +1,6 @@
 "use client";
-import { TransitionVertical } from "@/animation";
-import { useTransistionVertical } from "@/hooks";
+
+import { TransitionVertical, useTransistionVertical } from "@/components";
 
 const About = () => {
   const { onTransistionVertical } = useTransistionVertical({});

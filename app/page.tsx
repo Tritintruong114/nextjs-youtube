@@ -1,7 +1,6 @@
 "use client";
 
-import { TransitionVertical } from "@/animation";
-import { useTransistionVertical } from "@/hooks";
+import { TransitionVertical, useTransistionVertical } from "@/components";
 
 export default function Home() {
   const { onTransistionVertical } = useTransistionVertical({});
