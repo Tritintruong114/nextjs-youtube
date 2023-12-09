@@ -2,3 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Housettely";
+  src: url("/public/HousttelySignature-GOonZ.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader-clip {
+  position: absolute;
+  width: 100vw;
+  height: 33.3vh;
+  overflow: clip;
+  z-index: 10000;
+}
+
+.clip-top {
+  top: 0;
+  height: 50vh;
+  clip-path: inset(0 0 0 0);
+  background-color: #000;
+}
+.clip-bottom {
+  bottom: 0;
+  height: 50vh;
+  clip-path: inset(0 0 0 0);
+  background-color: #000;
+}
+
+.clip-center {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 33.3vh;
+  top: 33.3vh;
+}
+
+.marquee {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 200vw;
+  color: #fff;
+  mix-blend-mode: difference;
+  font-size: 9vw;
+}
+
+.marquee-container {
+  width: 100%;
+  padding: 0.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  font-family: "Neue Montreal";
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.container__wrapper .nav,
+.container__wrapper .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2em 4em;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-items a:not(:last-child) {
+  padding-right: 4em;
+}
+.logo {
+  text-transform: lowercase;
+  font-size: 3em;
+}

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const myFont = localFont({
+  src: "../public/HousttelySignature-GOonZ.ttf",
+  variable: "--font-house",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${myFont.variable}`}>{children}</body>
     </html>
   );
 }

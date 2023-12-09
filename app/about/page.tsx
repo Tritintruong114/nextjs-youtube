@@ -1,17 +1,17 @@
 "use client";
 
-import { TransitionVertical, useTransistionVertical } from "@/components";
+import { TransitionDropDown, useTransistionDropDown } from "@/components";
 
 const About = () => {
-  const { onTransistionVertical } = useTransistionVertical({});
+  const { onTransistionDropDown } = useTransistionDropDown({});
 
   return (
     <>
-      <TransitionVertical />
+      <TransitionDropDown />
       <div className="h-screen w-screen  flex justify-center items-center">
         <button
           onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-            onTransistionVertical("/")
+            onTransistionDropDown("/")
           }
         >
           Home
