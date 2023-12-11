@@ -16,6 +16,8 @@ const config: Config = {
       },
       fontFamily: {
         house: ["var(--font-house)"],
+        jose: ["Josefin Sans", "sans-serif"],
+        great: ["Great Vibes", "cursive"],
       },
     },
   },
