@@ -1,21 +1,15 @@
 "use client";
 
-import { TransitionDropDown, useTransistionDropDown } from "@/components";
+import { TransitionFourColumns, useTransistionFourColumns } from "@/components";
 
 const About = () => {
-  const { onTransistionDropDown } = useTransistionDropDown({});
+  const { onTransistionFourColumns } = useTransistionFourColumns({});
 
   return (
     <>
-      <TransitionDropDown />
+      <TransitionFourColumns />
       <div className="h-screen w-screen  flex justify-center items-center">
-        <button
-          onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
-            onTransistionDropDown("/")
-          }
-        >
-          Home
-        </button>
+        <button onClick={() => onTransistionFourColumns("/")}>Home</button>
       </div>
     </>
   );

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
 const myFont = localFont({
   src: "../public/HousttelySignature-GOonZ.ttf",
   variable: "--font-house",
@@ -19,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${myFont.variable}`}>{children}</body>
+      <body data-barba="wrapper" className={`${myFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

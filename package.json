@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "dynamic-marquee": "^2.6.3",
+    "@barba/core": "^2.9.7",
     "gsap": "^3.12.3",
     "imagesloaded": "^5.0.0",
     "next": "14.0.3",
