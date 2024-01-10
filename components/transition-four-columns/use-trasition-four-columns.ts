@@ -9,8 +9,6 @@ export const useTransistionFourColumns = (
 ) => {
   const router = useRouter();
 
-  const { path } = props;
-
   const onTransistionFourColumns = (path: string) => {
     gsap.to(".transition_el-up", {
       duration: 2,

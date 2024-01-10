@@ -1,9 +1,9 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useLayoutEffect } from "react";
 
 const TransitionFourColumns = () => {
-  useLayoutEffect(() => {
+  useGSAP(() => {
     gsap.to(".transition_el-up", {
       duration: 2,
       height: 0,
@@ -22,6 +22,7 @@ const TransitionFourColumns = () => {
       ease: "power4.inOut",
     });
   }, []);
+
   return (
     <div className="absolute h-screen w-screen z-10 flex-col flex pointer-events-none">
       <div className="h-1/2 w-full flex justify-center z-10">
