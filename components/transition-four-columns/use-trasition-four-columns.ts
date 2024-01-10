@@ -2,13 +2,14 @@
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
 interface UseTransistionVerticalProps {
-  onTransistionFourColumns?: () => void;
   path?: string;
 }
 export const useTransistionFourColumns = (
   props: UseTransistionVerticalProps
 ) => {
   const router = useRouter();
+
+  const { path } = props;
 
   const onTransistionFourColumns = (path: string) => {
     gsap.to(".transition_el-up", {

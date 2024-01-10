@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
+    "@gsap/react": "^2.0.2",
     "gsap": "^3.12.3",
     "imagesloaded": "^5.0.0",
     "next": "14.0.3",

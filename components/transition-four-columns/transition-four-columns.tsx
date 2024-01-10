@@ -23,7 +23,7 @@ const TransitionFourColumns = () => {
     });
   }, []);
   return (
-    <div className="absolute h-screen w-screen z-10 flex-col flex pointer-events-none ">
+    <div className="absolute h-screen w-screen z-10 flex-col flex pointer-events-none">
       <div className="h-1/2 w-full flex justify-center z-10">
         <div className=" transition_el-up h-full w-1/2  bg-black"></div>
         <div className=" transition_el-up h-full w-1/2  bg-black"></div>
