@@ -7,6 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./animation/**/*.{js,ts,jsx,tsx,mdx}",
+    "./public/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -20,8 +21,8 @@ const config: Config = {
       inset: {},
       padding: {
         xxxl: "120px",
-        xxl: "",
-        xl: "",
+        xxl: "90px",
+        xl: "60px",
         base: "20px",
         lg: "15px",
         md: "12px",
@@ -57,6 +58,7 @@ const config: Config = {
           white: "#ffffff",
           yellow: "#f7ff00",
           broom: "#fff023",
+          blue: "#3B0982",
         },
       },
       width: {},
