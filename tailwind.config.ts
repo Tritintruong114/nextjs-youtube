@@ -10,24 +10,34 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: {},
       fontFamily: {
         house: ["var(--font-house)"],
-        jose: ["Josefin Sans", "sans-serif"],
         great: ["Great Vibes", "cursive"],
         bebas: ["Bebas Neue", "sans-serif"],
+        jose: ["Josefin Sans", "sans-serif"],
       },
       inset: {},
-      borderRadius: {},
-      padding: {},
+      padding: {
+        xxxl: "120px",
+        xxl: "",
+        xl: "",
+        base: "20px",
+        lg: "15px",
+        md: "12px",
+        sm: "9px",
+        xs: "",
+        xxs: "",
+        xxxs: "",
+      },
       height: {},
-      margin: {},
+      margin: {
+        base: "20px",
+      },
+      borderRadius: {},
       fontSize: {
-        "fluid-body-xl": createFluidValue(20, 20),
+        "fluid-body-xl": createFluidValue(20, 30),
+        "fluid-body-xxl": createFluidValue(20, 54),
         "fluid-body-lg": createFluidValue(18, 18),
         "fluid-body-sm": createFluidValue(14, 14),
         "fluid-h1": createFluidValue(48, 64),
@@ -50,7 +60,9 @@ const config: Config = {
         },
       },
       width: {},
-      gap: {},
+      gap: {
+        base: "20px",
+      },
     },
   },
   plugins: [],

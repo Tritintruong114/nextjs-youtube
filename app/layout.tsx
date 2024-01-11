@@ -18,7 +18,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-barba="wrapper" className={`${myFont.variable}`}>
+      <body data-barba="wrapper" className="bg-bruno-black text-bruno-white">
+        <header className="sm:w-screen sm:block hidden">
+          <ul className="w-full justify-between fixed items-center flex px-base">
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              Home
+            </li>
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              Playground
+            </li>
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              Elements
+            </li>
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              Blog
+            </li>
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              About
+            </li>
+            <li className="px-base text-center py-sm w-full border border-bruno-gold">
+              Contact
+            </li>
+          </ul>
+        </header>
         {children}
       </body>
     </html>
