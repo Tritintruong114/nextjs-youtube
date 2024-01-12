@@ -11,7 +11,7 @@ const Cursor = () => {
       id="cursor"
     >
       <div className="cursor_marquee h-full justify-center items-center hidden">
-        <Marquee>
+        <Marquee direction="right">
           <p className="text-fluid-body-xl font-bold text-bruno-black font-dm">
             - View
           </p>

@@ -71,6 +71,9 @@ export default function Home() {
             </div>
             <div className="sm:col-span-3 border-2 p-3 border-bruno-yellow w-full h-full">
               <div className=" h-full w-full  relative overflow-hidden">
+                <h3 className="absolute w-full h-full flex justify-center items-center text-fluid-body-xxl">
+                  Projects
+                </h3>
                 {hero.projects.map((project, index) => {
                   return (
                     <div key={index} className="project_card cursor-pointer">

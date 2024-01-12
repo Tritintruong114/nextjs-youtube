@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Cursor from "@/components/elements/cursor/cursor";
+import MainHeader from "@/components/layouts/header/header";
 const myFont = localFont({
   src: "../public/HousttelySignature-GOonZ.ttf",
   variable: "--font-house",
@@ -21,28 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body data-barba="wrapper" className="bg-bruno-black text-bruno-white">
         <Cursor />
-        <header className="sm:w-screen z-20 sm:block hidden">
-          <ul className="w-full justify-between items-center flex px-base">
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              Home
-            </li>
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              Playground
-            </li>
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              Elements
-            </li>
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              Blog
-            </li>
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              About
-            </li>
-            <li className="px-base bg-bruno-black  text-center py-sm w-full border border-bruno-gold">
-              Contact
-            </li>
-          </ul>
-        </header>
+        <MainHeader />
 
         {children}
       </body>
