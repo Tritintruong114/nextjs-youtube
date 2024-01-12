@@ -1,14 +1,11 @@
 "use client";
-
-type ButtonPropsType = {
+import { useButton } from "./use-button";
+export type ButtonPropsType = {
   children: React.ReactNode;
   setProjectTitle: React.Dispatch<React.SetStateAction<any>>;
 };
 const Button = ({ children, setProjectTitle }: ButtonPropsType) => {
-  const onHoverButton = () => {
-    console.log(children);
-    setProjectTitle(children);
-  };
+  const { onHoverButton } = useButton({ children, setProjectTitle });
   return (
     <button
       onMouseEnter={() => onHoverButton()}

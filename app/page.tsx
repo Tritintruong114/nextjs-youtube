@@ -4,8 +4,9 @@ import ShapeOne from "@/public/shape-one";
 import Image from "next/image";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
-
+import { homepage } from "@/data/homepage.json";
 export default function Home() {
+  const { hero } = homepage;
   const [projectTitle, setProjectTitle] = useState("");
 
   return (
@@ -59,29 +60,39 @@ export default function Home() {
 
             <div className="sm:col-span-1">
               <ul className="flex flex-col justify-between h-full">
-                <Button setProjectTitle={setProjectTitle}>Wooder</Button>
-                <Button setProjectTitle={setProjectTitle}>One Cycle</Button>
-                <Button setProjectTitle={setProjectTitle}>Hyrbrbase</Button>
-                <Button setProjectTitle={setProjectTitle}>Crypto Flow</Button>
-                <Button setProjectTitle={setProjectTitle}>
-                  Maison De Villa
-                </Button>
-                <Button setProjectTitle={setProjectTitle}>
-                  Manh Hieu Photography
-                </Button>
+                {hero.projects.map((project, index) => {
+                  return (
+                    <Button key={index} setProjectTitle={setProjectTitle}>
+                      {project.projectTitle}
+                    </Button>
+                  );
+                })}
               </ul>
             </div>
             <div className="sm:col-span-3 border-2 p-3 border-bruno-yellow w-full h-full">
-              <div className=" h-full w-full bg-yellow-200 relative">
-                <Image
-                  src="/images/maison.jpg"
-                  alt=""
-                  fill
-                  className="object-cover w-full h-full"
-                />
-                <h3 className="project_tilte ml-3 duration-500 relative z-10 text-start font-bebas text-fluid-body-xxl">
-                  {projectTitle}
-                </h3>
+              <div className=" h-full w-full  relative overflow-hidden">
+                {hero.projects.map((project, index) => {
+                  return (
+                    <div key={index} className="project_card cursor-pointer">
+                      <Image
+                        src={project.projectImg}
+                        alt=""
+                        width={450}
+                        height={450}
+                        className={`object-cover absolute w-full h-full  duration-500 ${
+                          projectTitle === project.projectTitle
+                            ? "top-0"
+                            : "top-[100%]"
+                        }`}
+                      />
+                      <h3 className="project_tilte ml-3 duration-500 relative z-10 text-start font-bebas text-fluid-body-xxl">
+                        {projectTitle === project.projectTitle
+                          ? project.projectTitle
+                          : ""}
+                      </h3>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

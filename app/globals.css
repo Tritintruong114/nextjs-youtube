@@ -15,3 +15,14 @@
   align-items: center;
   text-align: center;
 }
+
+/* Cursor component */
+.cursor {
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: -50%;
+  z-index: 10000;
+  transition: all 500ms ease-out;
+}
