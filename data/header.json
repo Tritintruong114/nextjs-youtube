@@ -1,0 +1,28 @@
+{
+  "header": [
+    {
+      "label": "home",
+      "href": "/"
+    },
+    {
+      "label": "playground",
+      "href": "/playround"
+    },
+    {
+      "label": "blog",
+      "href": "/blog"
+    },
+    {
+      "label": "services",
+      "href": "/services"
+    },
+    {
+      "label": "contact",
+      "href": "/contact"
+    },
+    {
+      "label": "community",
+      "href": "/community"
+    }
+  ]
+}
