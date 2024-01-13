@@ -11,8 +11,9 @@ type HeaderNavItemProps = {
 export enum HeaderNavItemDatas {
   Home = "/",
   About = "/about",
-  Contact = "/contact",
-  Projects = "/projects",
+  Playground = "/playground",
+  Community = "/community",
+  Blog = "/blog",
   Services = "/services",
 }
 export const useHeader = (props: HeaderNavItemProps) => {

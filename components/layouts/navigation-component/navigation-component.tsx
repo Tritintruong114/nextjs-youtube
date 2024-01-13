@@ -1,16 +1,16 @@
 "use client";
+import { useParams } from "next/navigation";
 import React from "react";
-import { useNavigation } from "./use-navigation";
 
 const NavigationComponent = () => {
-  const {} = useNavigation();
+  const pathname = useParams();
   return (
-    <div className="bg-bruno-yellow navigation_container text-center flex items-center justify-center h-0 w-screen bottom-0 fixed z-20">
+    <div className="bg-bruno-yellow h-screen navigation_container text-center flex items-center justify-center w-screen fixed z-20">
       <div className="text-bruno-black gap-1 flex font-bold h-fit overflow-hidden">
-        <p className="navigation_title relative -bottom-96 text-fluid-h1 font-bebas">
+        <p className="navigation_title relative text-fluid-h1 font-bebas">
           Bruno
         </p>
-        <p className="navigation_title relative -bottom-96 text-fluid-h1 font-bebas">
+        <p className="navigation_title relative text-fluid-h1 font-bebas">
           Truong
         </p>
       </div>

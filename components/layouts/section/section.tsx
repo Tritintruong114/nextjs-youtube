@@ -5,10 +5,7 @@ type SectionTypes = {
 };
 const Section = ({ children, className }: SectionTypes) => {
   return (
-    <section
-      data-comp="section"
-      className={`sm:pb-base pt-xxl h-screen ${className}`}
-    >
+    <section data-comp="section" className={`sm:pb-base pt-xxl  ${className}`}>
       {children}
     </section>
   );
