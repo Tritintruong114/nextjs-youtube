@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Cursor from "@/components/elements/cursor/cursor";
 import MainHeader from "@/components/layouts/header/header";
+import NavigationComponent from "@/components/layouts/navigation-component/navigation-component";
 const myFont = localFont({
   src: "../public/HousttelySignature-GOonZ.ttf",
   variable: "--font-house",
@@ -23,8 +24,8 @@ export default function RootLayout({
       <body data-barba="wrapper" className="bg-bruno-black text-bruno-white">
         <Cursor />
         <MainHeader />
-
-        {children}
+        <NavigationComponent />
+        <div className="content_container">{children}</div>
       </body>
     </html>
   );

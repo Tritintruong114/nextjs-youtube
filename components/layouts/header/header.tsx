@@ -3,12 +3,12 @@ import React from "react";
 import { useHeader } from "./use-header";
 import Link from "next/link";
 import { header } from "@/data/header.json";
+import { navigationtl } from "../navigation-component/use-navigation";
 const MainHeader = () => {
   const { pathname, onNavigation, scrollDirection } = useHeader({});
 
-  console.log(pathname);
   return (
-    <header className="sm:w-screen z-20 sm:block fixed hidden pt-base">
+    <header className="sm:w-screen z-30 sm:block fixed hidden pt-base">
       <ul className="w-full justify-between items-center flex gap-base px-base">
         {header.map((headerItem, index) => {
           return (
