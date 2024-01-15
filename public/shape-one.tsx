@@ -30,7 +30,7 @@ const ShapeOne = () => {
           className="rotate-90 animate-spin"
         >
           {" "}
-          <stop stop-color="#DF99F7" /> <stop offset="1" stop-color="#FFDBB0" />{" "}
+          <stop stop-color="#F26835" /> <stop offset="1" stop-color="#FFDBB0" />{" "}
         </linearGradient>{" "}
         {/* <clipPath id="clip0_105_296">
           {" "}
