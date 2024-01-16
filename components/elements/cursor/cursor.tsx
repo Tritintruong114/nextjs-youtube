@@ -6,7 +6,7 @@ const Cursor = () => {
   const {} = useCursor();
   return (
     <div
-      className="cursor flex justify-center items-center bg-bruno-pink h-[15px] w-[15px] overflow-hidden"
+      className="cursor flex justify-center items-center bg-bruno-dark-grey  h-[15px] w-[15px] overflow-hidden"
       id="cursor"
     >
       <div className="cursor_marquee h-full justify-center items-center hidden">

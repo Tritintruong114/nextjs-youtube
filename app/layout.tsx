@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-barba="wrapper" className="bg-bruno-white text-bruno-black">
+      <body data-barba="wrapper" className="bg-bruno-ximen">
         <Cursor />
         <MainHeader />
         <NavigationComponent />

@@ -13,10 +13,7 @@ const config: Config = {
     extend: {
       backgroundImage: {},
       fontFamily: {
-        house: ["var(--font-house)"],
-        great: ["Great Vibes", "cursive"],
         bebas: ["Bebas Neue", "sans-serif"],
-        jose: ["Josefin Sans", "sans-serif"],
       },
       inset: {},
       padding: {
@@ -49,16 +46,16 @@ const config: Config = {
         "fluid-display-m": createFluidValue(60, 84),
         "fluid-display-xl": createFluidValue(45, 140),
         "fluid-display-2xl": createFluidValue(50, 190),
-        "fluid-display-3xl": createFluidValue(50, 400),
+        "fluid-display-3xl": createFluidValue(50, 270),
       },
       colors: {
         bruno: {
-          gold: "#ffd600",
-          black: "#000000",
-          white: "#ffffff",
-          yellow: "#FFF78A",
-          broom: "#fff023",
-          pink: "#595959",
+          grey: "#BFBDBE",
+          white: "#F2F2F2",
+          black: "#0D0D0D",
+          ximen: "#595659",
+          yellow: "#F2E85E",
+          "dark-grey": "#403C3F",
         },
       },
       width: {},

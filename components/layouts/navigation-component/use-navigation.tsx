@@ -1,9 +1,8 @@
 "use client";
-import { useSafeLayout } from "@/hooks/useSafeLayout";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useParams, useRouter } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
 
 export const navigationtl = gsap.timeline({});
 
@@ -15,7 +14,6 @@ export const useNavigation = (pathname?: string) => {
       ".navigation_container"
     );
 
-    console.log(heroTitleRef.current);
     const contentContainer =
       document.querySelector<HTMLDivElement>(".content_container");
     const navigationTitles =
@@ -23,7 +21,7 @@ export const useNavigation = (pathname?: string) => {
 
     const context = gsap.context(() => {
       navigationtl.to(navigationContainer, {
-        bottom: 0,
+        bottom: "-10px",
         height: 0,
         delay: 0.9,
         duration: 0.9,
@@ -42,6 +40,9 @@ export const useNavigation = (pathname?: string) => {
         duration: 0.6,
         ease: "power4.inOut",
       });
+      gsap.to("marquee_container", {
+        bottom: 0,
+      });
     });
     document.body.style.overflow = "auto";
     document.body.style.userSelect = "auto";
@@ -54,6 +55,7 @@ export const useNavigation = (pathname?: string) => {
 
     navigationtl
       .to(".navigation_container", {
+        bottom: 0,
         duration: 0.9,
         height: "100vh",
         ease: "power4.inOut",
@@ -65,8 +67,8 @@ export const useNavigation = (pathname?: string) => {
       });
     gsap.to(".content_container", {
       scale: 0.9,
-      duration: 0.6,
-      ease: "power4.in",
+      duration: 0.9,
+      ease: "power4.inOut",
     });
   };
 
