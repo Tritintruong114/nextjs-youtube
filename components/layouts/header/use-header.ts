@@ -1,8 +1,8 @@
 "use client";
+import classNames from "classnames";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { setTimeout } from "timers";
+import { useNavigation } from "../navigation-component/use-navigation";
 
 type HeaderNavItemProps = {
   href?: HeaderNavItemDatas;
@@ -18,19 +18,25 @@ export enum HeaderNavItemDatas {
 }
 export const useHeader = (props: HeaderNavItemProps) => {
   const [showMobile, setShowMobile] = useState(false);
+  const [onSrcollDown, setOnScrollDown] = useState(false);
 
   const onShowMobile = () => {
     setShowMobile((prev) => !prev);
   };
   const pathname = usePathname();
   const { onShowMenu } = props;
+  const { onNavigation } = useNavigation(pathname);
 
-  const onNavigation = (href: string) => {
-    if (onShowMenu) {
-      onShowMenu();
-    }
-    if (pathname === href) return;
-  };
+  const btnClass = classNames({
+    btn: true,
+    "-top-96": onSrcollDown,
+  });
+  // const onNavigation = (href: string) => {
+  //   if (onShowMenu) {
+  //     onShowMenu();
+  //   }
+  //   if (pathname === href) return;
+  // };
 
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState("");

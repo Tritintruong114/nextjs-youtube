@@ -3,10 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const HompageHero = () => {
   return (
-    <section
-      data-comp="section"
-      className="sm:pb-base pt-xxl h-screen bg-bruno-grey"
-    >
+    <section data-comp="section" className=" pt-xxl h-screen bg-bruno-grey">
       <div data-comp="container" className="sm:mx-auto px-base h-full">
         <div
           data-comp="hero"

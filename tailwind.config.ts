@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
       },
+
       inset: {},
       padding: {
         xxxl: "120px",
@@ -30,7 +31,16 @@ const config: Config = {
       },
       height: {},
       margin: {
+        xxxl: "120px",
+        xxl: "90px",
+        xl: "60px",
         base: "20px",
+        lg: "15px",
+        md: "12px",
+        sm: "9px",
+        xs: "",
+        xxs: "",
+        xxxs: "",
       },
       borderRadius: {},
       fontSize: {

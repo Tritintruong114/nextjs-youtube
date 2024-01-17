@@ -1,10 +1,8 @@
 "use client";
 import { header } from "@/data/header.json";
-import { useNavigation } from "../navigation-component/use-navigation";
 import { useHeader } from "./use-header";
 const MainHeader = () => {
-  const { pathname } = useHeader({});
-  const { onNavigation } = useNavigation(pathname);
+  const { pathname, scrollDirection, onNavigation } = useHeader({});
 
   return (
     <header className="sm:w-screen z-30 sm:block fixed hidden pt-base">

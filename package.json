@@ -13,6 +13,7 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@gsap/react": "^2.0.2",
+    "classnames": "^2.5.1",
     "clsx": "^2.1.0",
     "gsap": "^3.12.3",
     "imagesloaded": "^5.0.0",
