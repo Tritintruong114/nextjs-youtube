@@ -5,7 +5,11 @@ const MainHeader = () => {
   const { pathname, scrollDirection, onNavigation } = useHeader({});
 
   return (
-    <header className="sm:w-screen z-30 sm:block fixed hidden pt-base">
+    <header
+      className={`sm:w-screen z-30 sm:block fixed hidden pt-base duration-500 ${
+        scrollDirection === "down" ? "-top-96" : "top-0"
+      }`}
+    >
       <nav
         aria-labelledby="sections-heading"
         className="w-full flex justify-center items-center"
