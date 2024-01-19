@@ -4,7 +4,7 @@ const HomepageProject = () => {
   return (
     <section
       data-comp="section"
-      className=" py-xxl sm:h-fit bg-bruno-ximen sticky top-0"
+      className=" py-xxl sm:h-fit sm:sticky sm:top-0 relative bg-bruno-ximen"
     >
       <div data-comp="container" className="sm:mx-auto px-base h-full">
         <div className="grid h-full">
@@ -12,14 +12,14 @@ const HomepageProject = () => {
             <h2 className="text-fluid-display-xl text-bruno-yellow font-bebas leading-none">
               My Works
             </h2>
-            <p className="font-bebas text-fluid-body-xl w-1/2 text-bruno-white">
+            <p className=" font-bold font-manrope text-fluid-body-xl sm:w-1/2 text-bruno-white">
               I am passionate about continuously learning and seeking
               opportunities to contribute to meaningful projects in a
               collaborative environment.
             </p>
           </div>
           <div className="grid w-full h-full py-base">
-            <ul className="flex gap-base sm:gap-0 flex-col sm:flex-row h-[450px] relative  justify-center items-center -mb-1">
+            <ul className="flex gap-base sm:gap-0 flex-col sm:flex-row sm:h-[350px] relative  justify-center items-center -mb-1">
               <li className="sm:w-1/2 h-full flex items-end  relative group hover:w-full duration-300 grayscale hover:grayscale-0">
                 <Image
                   src="/images/crypto.jpg"
@@ -107,8 +107,8 @@ const HomepageProject = () => {
             </ul>
           </div>
         </div>
-        <div className="h-screen bg-bruno-ximen block w-full"></div>
       </div>
+      <div className="sm:h-screen hidden sm:block bg-bruno-ximen w-full"></div>
     </section>
   );
 };

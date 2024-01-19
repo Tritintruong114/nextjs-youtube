@@ -5,7 +5,7 @@ const HompageHero = () => {
   return (
     <section
       data-comp="section"
-      className=" pt-xxl h-screen bg-bruno-grey max-h-full  "
+      className=" pt-xxl h-screen bg-bruno-grey max-h-full overflow-hidden "
     >
       <div
         data-comp="container"

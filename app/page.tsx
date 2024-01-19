@@ -1,5 +1,6 @@
 "use client";
 import HomepageCta from "@/pages/homepage/cta";
+import HomepageExpertise from "@/pages/homepage/expertise";
 import HompageHero from "@/pages/homepage/hero";
 import HomepageProject from "@/pages/homepage/project";
 import HomepageValue from "@/pages/homepage/value";
@@ -9,6 +10,7 @@ export default function Home() {
       <HompageHero />
       <HomepageCta />
       <HomepageProject />
+      <HomepageExpertise />
       <HomepageValue />
     </main>
   );

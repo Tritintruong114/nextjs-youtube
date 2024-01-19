@@ -13,6 +13,7 @@ const config: Config = {
     extend: {
       backgroundImage: {},
       fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
       },
 
@@ -25,7 +26,7 @@ const config: Config = {
         lg: "15px",
         md: "12px",
         sm: "9px",
-        xs: "",
+        xs: "6px",
         xxs: "",
         xxxs: "",
       },
