@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const PlayroundPage = () => {
   return (
-    <>
+    <main className="rounded-3xl overflow-y-scroll h-screen  no-scrollbar">
       <Section className="bg-bruno-white">
         <Container>
           <div className=" sm:col-span-4  sticky top-24 text-bruno-ximen text-center flex justify-center items-center flex-col">
@@ -17,7 +17,7 @@ const PlayroundPage = () => {
             data-comp="hero"
             className="grid grid-cols-1  sm:grid-cols-4 gap-base"
           ></div>
-          <div className="grid mt-base grid-cols-1 relative bg-bruno-white py-base md:grid-cols-2 xl:grid-cols-3 gap-base ">
+          <div className="grid mt-base grid-cols-1 relative bg-bruno-white py-base md:grid-cols-2 xl:grid-cols-3 gap-base  max-w-screen-2xl">
             <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
               <div className="relative h-[300px] w-full">
                 <Image
@@ -135,7 +135,7 @@ const PlayroundPage = () => {
           </div>
         </Container>
       </Section>
-    </>
+    </main>
   );
 };
 

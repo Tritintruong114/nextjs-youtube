@@ -3,6 +3,7 @@ import { header } from "@/data/header.json";
 import { useHeader } from "./use-header";
 const MainHeader = () => {
   const { pathname, scrollDirection, onNavigation } = useHeader({});
+  console.log("Render");
 
   return (
     <header
@@ -21,7 +22,7 @@ const MainHeader = () => {
             return (
               <li key={index} className="group relative overflow-hidden">
                 <button
-                  className={`  items-center px-6 py-2 rounded-xl font-bold capitalize flex flex-col text-fluid-body-lg  group-hover:scale-[0.7] group-hover:opacity-50 duration-300 ${
+                  className={`  items-center px-4 py-1 rounded-xl font-bold capitalize flex flex-col text-fluid-body-lg  group-hover:scale-[0.7] group-hover:opacity-50 duration-300 ${
                     pathname === headerItem.href ? "" : "text-bruno-black"
                   }`}
                 >
@@ -29,7 +30,7 @@ const MainHeader = () => {
                 </button>
                 <button
                   onClick={() => onNavigation(headerItem.href)}
-                  className={`bg-bruno-dark-grey items-center px-6 py-2 rounded-xl  font-bold capitalize flex flex-col text-bruno-white text-fluid-body-lg  absolute left-0 group-hover:bottom-0 duration-300  
+                  className={`bg-bruno-dark-grey items-center px-4 py-1 rounded-xl  font-bold capitalize flex flex-col text-bruno-white text-fluid-body-lg  absolute left-0 group-hover:bottom-0 duration-300  
                   ${pathname === headerItem.href ? "bottom-0" : "-bottom-32"}
                   `}
                 >

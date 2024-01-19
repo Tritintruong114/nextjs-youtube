@@ -3,12 +3,12 @@ const HomepageValue = () => {
   return (
     <section
       data-comp="section"
-      className="sm:pb-base pt-xxl h-screen relative bg-bruno-white text-bruno-dark-grey"
+      className="py-xxl h-screen relative bg-bruno-white text-bruno-dark-grey"
     >
       <div data-comp="container" className="sm:mx-auto px-base h-full">
         <div className="my-base">
           <h2 className="text-fluid-display-xl font-bebas text-center flex items-center justify-center flex-col leading-none">
-            <span className="block text-fluid-display-3xl">Let's Do</span>
+            <span className="block text-fluid-display-xxl">Let's Do</span>
             <span className="block text-fluid-display-m">Something</span>
             <span className="flex">Amazing</span>
             <span className="block text-fluid-display-3xl">Together</span>

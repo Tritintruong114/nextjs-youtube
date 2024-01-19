@@ -1,5 +1,4 @@
 "use client";
-import classNames from "classnames";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useNavigation } from "../navigation-component/use-navigation";
@@ -27,22 +26,10 @@ export const useHeader = (props: HeaderNavItemProps) => {
   const { onShowMenu } = props;
   const { onNavigation } = useNavigation(pathname);
 
-  const btnClass = classNames({
-    btn: true,
-    "-top-96": onSrcollDown,
-  });
-  // const onNavigation = (href: string) => {
-  //   if (onShowMenu) {
-  //     onShowMenu();
-  //   }
-  //   if (pathname === href) return;
-  // };
-
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState("");
     useEffect(() => {
       let lastScrollY = window.pageYOffset;
-
       const updateScrollDirection = () => {
         const scrollY = window.pageYOffset;
         const direction = scrollY > lastScrollY ? "down" : "up";
@@ -58,7 +45,7 @@ export const useHeader = (props: HeaderNavItemProps) => {
       return () => {
         window.removeEventListener("scroll", updateScrollDirection); // clean up
       };
-    }, []);
+    }, [scrollDirection]);
 
     return scrollDirection;
   }

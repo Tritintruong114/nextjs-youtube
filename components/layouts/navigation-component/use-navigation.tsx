@@ -5,7 +5,9 @@ import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
 export const navigationtl = gsap.timeline({});
-
+type TypeNavigation = {
+  pathname: string | null;
+};
 export const useNavigation = (pathname: string | null) => {
   const router = useRouter();
   const heroTitleRef = useRef<HTMLHeadingElement>(null);
