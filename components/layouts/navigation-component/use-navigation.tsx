@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 export const navigationtl = gsap.timeline({});
 
-export const useNavigation = (pathname?: string) => {
+export const useNavigation = (pathname: string | null) => {
   const router = useRouter();
   const heroTitleRef = useRef<HTMLHeadingElement>(null);
   useGSAP(() => {
