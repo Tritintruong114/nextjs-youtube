@@ -3,7 +3,6 @@ import { header } from "@/data/header.json";
 import { useHeader } from "./use-header";
 const MainHeader = () => {
   const { pathname, scrollDirection, onNavigation } = useHeader({});
-  console.log("Render");
 
   return (
     <header

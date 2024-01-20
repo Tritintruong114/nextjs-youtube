@@ -1,12 +1,11 @@
+import Container from "@/components/layouts/container/container";
+import Section from "@/components/layouts/section/section";
 import Image from "next/image";
 
 const HomepageProject = () => {
   return (
-    <section
-      data-comp="section"
-      className=" py-xxl sm:h-fit sm:sticky sm:top-0 relative bg-bruno-ximen"
-    >
-      <div data-comp="container" className="sm:mx-auto px-base h-full">
+    <Section className="bg-bruno-dark-grey">
+      <Container>
         <div className="grid h-full">
           <div className=" mb-base sm:mb-0 text-center w-full flex flex-col justify-center items-center">
             <h2 className="text-fluid-display-xl text-bruno-yellow font-bebas leading-none">
@@ -107,9 +106,8 @@ const HomepageProject = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="sm:h-screen hidden sm:block bg-bruno-ximen w-full"></div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 

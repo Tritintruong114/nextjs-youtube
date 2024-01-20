@@ -6,8 +6,8 @@ type ContainerTypes = {
 const Container = ({ children, className }: ContainerTypes) => {
   return (
     <div
-      data-comp="cointainer"
-      className={`sm:mx-auto px-base h-full  ${className} max-w-screen-2xl`}
+      data-component-layout="cointainer"
+      className={`sm:mx-auto px-base h-full  flex flex-col  ${className} max-w-screen-2xl`}
     >
       {children}
     </div>

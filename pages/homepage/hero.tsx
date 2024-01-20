@@ -1,16 +1,12 @@
+import Container from "@/components/layouts/container/container";
+import Section from "@/components/layouts/section/section";
 import ShapeOne from "@/public/shape-one";
 import Marquee from "react-fast-marquee";
 
 const HompageHero = () => {
   return (
-    <section
-      data-comp="section"
-      className=" pt-xxl h-screen bg-bruno-grey max-h-full overflow-hidden "
-    >
-      <div
-        data-comp="container"
-        className="sm:mx-auto px-base h-full max-w-screen-2xl"
-      >
+    <Section className="bg-bruno-white z-10">
+      <Container>
         <div
           data-comp="hero"
           className="flex justify-between relative flex-col h-full"
@@ -29,7 +25,7 @@ const HompageHero = () => {
             </div>
           </div>
 
-          <div className=" sm:col-span-4 py-bass -mx-[100%] flex sm:h-fit justify-center items-center  bg-bruno-ximen text-fluid-body-xxl font-bebas text-bruno-white col-span-1">
+          <div className=" sm:col-span-4 py-bass -mx-[100%] -mb-[100px] flex sm:h-fit justify-center items-center  bg-bruno-ximen text-fluid-body-xxl font-bebas text-bruno-white col-span-1">
             <Marquee pauseOnHover speed={30} autoFill>
               <ShapeOne />
               <span className="px-base pt-1 text-center flex items-center justify-center">
@@ -47,8 +43,8 @@ const HompageHero = () => {
             </Marquee>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 
