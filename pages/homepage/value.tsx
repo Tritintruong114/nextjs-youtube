@@ -9,16 +9,15 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 
-/* eslint-disable react/no-unescaped-entities */
 const HomepageValue = () => {
   useEffect(() => {
     const valueSectionRef = document.querySelector(".value_section");
-    gsap.registerPlugin(ScrollTrigger); // If not already initialized elsewhere
+    gsap.registerPlugin(ScrollTrigger);
     if (valueSectionRef) {
-      console.log("Value section");
       gsap.to(".hand_heart", {
-        scrollTrigger: {
+        ScrollTrigger: {
           trigger: valueSectionRef,
+          start: "top top",
         },
         bottom: 0,
       });

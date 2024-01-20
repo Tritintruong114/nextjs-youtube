@@ -15,7 +15,7 @@ const MainHeader = () => {
         className="w-full flex justify-center items-center"
       >
         <ul
-          className={`items-center flex gap-base px-base justify-center bg-[#ffffff]  duration-300 w-fit py-2 rounded-xl`}
+          className={`items-center flex gap-base px-base justify-center bg-[#ffffff]  duration-300 w-fit py-2 rounded-xl border-2 border-bruno-black`}
         >
           {header.map((headerItem, index) => {
             return (
