@@ -1,27 +1,73 @@
 import Container from "@/components/layouts/container/container";
 import Section from "@/components/layouts/section/section";
-import React from "react";
 
 const BlogPage = () => {
   return (
-    <Section>
+    <Section className="bg-bruno-grey">
       <Container>
-        <div
-          data-comp="hero"
-          className="grid grid-cols-1  sm:grid-cols-4 gap-base"
-        >
-          <div className=" sm:col-span-3 text-center flex justify-center items-center flex-col border border-bruno-yellow">
-            <h1 className="font-bebas text-fluid-display-2xl leading-normal">
-              Blog
-            </h1>
-          </div>
-          <div className="sm:col-span-1 py-base bg-bruno-yellow flex justify-center items-center font-bold text-fluid-body-sm px-base">
-            <div className="text-bruno-black">
-              <p>
-                The Playground features web experiments, concepts, and layouts
-                that push the boundaries of traditional design and showcase the
-                latest in animation techniques.
+        <div className="w-full justify-center items-center flex">
+          <h1 className="text-fluid-display-2xl font-bebas">Blog</h1>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-base">
+          <div className="col-span-1 bg-bruno-yellow p-base h-[350px] flex-col justify-between flex">
+            <div>
+              <p className="font-bold font-manrope text-fluid-body-sm">
+                Ho Chi Minh
               </p>
+            </div>
+            <div className="flex-grow flex flex-col justify-between py-base">
+              <h3 className="text-fluid-body-xxl font-bebas font-bold">
+                Blog 1
+              </h3>
+              <div className="flex gap-base">
+                <p>Next JS</p>
+                <p>Swell JS</p>
+              </div>
+            </div>
+            <div className="pt-base border-t border-bruno-black flex justify-between w-full items-center">
+              <p>Date</p>
+              <button>More</button>
+            </div>
+          </div>
+          <div className="col-span-1 bg-bruno-dark-grey text-white p-base h-[350px] flex-col justify-between flex">
+            <div>
+              <p className="font-bold font-manrope text-fluid-body-sm">
+                Ho Chi Minh
+              </p>
+            </div>
+            <div className="flex-grow flex flex-col justify-between py-base">
+              <h3 className="text-fluid-body-xxl font-bebas font-bold">
+                Blog 1
+              </h3>
+              <div className="flex gap-base">
+                <p>Next JS</p>
+                <p>Swell JS</p>
+              </div>
+            </div>
+            <div className="pt-base border-t border-bruno-black flex justify-between w-full items-center">
+              <p>Date</p>
+              <button>More</button>
+            </div>
+          </div>
+          <div className="col-span-1 bg-bruno-white p-base h-[350px] flex-col justify-between flex">
+            <div>
+              <p className="font-bold font-manrope text-fluid-body-sm">
+                Ho Chi Minh
+              </p>
+            </div>
+            <div className="flex-grow flex flex-col justify-between py-base">
+              <h3 className="text-fluid-body-xxl font-bebas font-bold">
+                Blog 1
+              </h3>
+              <div className="flex gap-base">
+                <p>Next JS</p>
+                <p>Swell JS</p>
+              </div>
+            </div>
+            <div className="pt-base border-t border-bruno-black flex justify-between w-full items-center">
+              <p>Date</p>
+              <button>More</button>
             </div>
           </div>
         </div>

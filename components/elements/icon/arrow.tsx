@@ -1,4 +1,4 @@
-const ArrowIcon = ({ className }: string) => {
+const ArrowIcon = () => {
   return (
     <svg
       width="60"

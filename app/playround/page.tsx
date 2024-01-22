@@ -46,7 +46,7 @@ const PlayroundPage = () => {
       <div className="bg-bruno-white">
         <Container>
           <div className="grid z-20 mt-base grid-cols-1 relative py-base md:grid-cols-2 xl:grid-cols-3 gap-base  max-w-screen-2xl">
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/5934311/file/original-9dd868a288cb625c2915941f021aacac.jpg?resize=2048x1536"
@@ -65,7 +65,7 @@ const PlayroundPage = () => {
                 </button>
               </div>
             </div>
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/8098427/file/original-c93690ccf7b111b11ee77f25608ee305.png?resize=1504x1128"
@@ -84,7 +84,7 @@ const PlayroundPage = () => {
                 </button>
               </div>
             </div>
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/12120905/file/original-283706f7e67387970473b2572f5b4c61.png?resize=1504x1128"
@@ -103,7 +103,7 @@ const PlayroundPage = () => {
                 </button>
               </div>
             </div>
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/5934311/file/original-9dd868a288cb625c2915941f021aacac.jpg?resize=2048x1536"
@@ -122,7 +122,7 @@ const PlayroundPage = () => {
                 </button>
               </div>
             </div>
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/8098427/file/original-c93690ccf7b111b11ee77f25608ee305.png?resize=1504x1128"
@@ -141,7 +141,7 @@ const PlayroundPage = () => {
                 </button>
               </div>
             </div>
-            <div className="shrink h-fit p-base border border-bruno-black bg-[#ffffff] rounded-3xl">
+            <div className="shrink h-fit p-base border  bg-[#ffffff]">
               <div className="relative h-[300px] w-full">
                 <Image
                   src="https://cdn.dribbble.com/userupload/12120905/file/original-283706f7e67387970473b2572f5b4c61.png?resize=1504x1128"
