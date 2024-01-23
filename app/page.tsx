@@ -6,7 +6,7 @@ import HomepageProject from "@/pages/homepage/project";
 import HomepageValue from "@/pages/homepage/value";
 export default function Home() {
   return (
-    <main className="rounded-3xl overflow-y-scroll h-screen  no-scrollbar">
+    <main className="rounded-3xl h-fit overflow-y-scroll  no-scrollbar">
       <HompageHero />
       <HomepageCta />
       <HomepageProject />

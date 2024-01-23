@@ -1,4 +1,3 @@
-import Cursor from "@/components/elements/cursor/cursor";
 import MainHeader from "@/components/layouts/header/header";
 import NavigationComponent from "@/components/layouts/navigation-component/navigation-component";
 import type { Metadata } from "next";
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body data-barba="wrapper" className="bg-bruno-black">
-        <Cursor />
         <MainHeader />
         <NavigationComponent />
         <div className="content_container">{children}</div>

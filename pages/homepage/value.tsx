@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import {
   HandHeartLeft,
@@ -24,7 +25,7 @@ const HomepageValue = () => {
     }
   }, []);
   return (
-    <Section className="bg-bruno-dark-grey relative overflow-hidden value_section">
+    <Section className="bg-bruno-dark-grey relative overflow-fit value_section">
       <div className="hand_heart absolute w-full h-full z-0 -bottom-96 flex justify-center items-center pointer-events-none">
         <div className="flex items-center">
           <HandHeartRight />
