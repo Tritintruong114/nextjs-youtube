@@ -2,8 +2,12 @@ import Image from "next/image";
 
 const BlogCard = () => {
   return (
-    <div className="col-span-1 bg-bruno-white p-base h-fit flex-col justify-between flex">
-      <div></div>
+    <div className="col-span-1 bg-bruno-white p-base h-fit flex-col justify-between flex group relative overflow-hidden">
+      <div className="bg-bruno-yellow w-full h-full duration-300 absolute z-10 top-0 group-hover:left-0 -left-[100%]">
+        <h3 className="font-bebas text-fluid-display-xl w-full absolute right-0 opacity duration-300 px-base">
+          Read More
+        </h3>
+      </div>
       <div className="grid grid-cols-2 fg">
         <div className="col-span-2 relative h-[300px]">
           <Image
@@ -28,9 +32,6 @@ const BlogCard = () => {
       <div className="pt-base border-t border-bruno-black flex justify-between w-full items-center">
         <p>Date</p>
         <p className="font-bold font-manrope text-fluid-body-sm">Ho Chi Minh</p>
-        <button className="px-6 py-1 bg-bruno-yellow text-bruno-black">
-          More
-        </button>
       </div>
     </div>
   );
