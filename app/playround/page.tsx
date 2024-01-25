@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 const PlayroundPage = () => {
   return (
     <main className="rounded-3xl relative overflow-y-scroll h-fit no-scrollbar">
-      <div className="fixed top-0 w-full sm:h-screen z-10 flex flex-col justify-between pointer-events-none">
-        <div className="w-full flex items-center">
-          <HandlSprinkle />
-        </div>
-        <div className="w-full flex items-center justify-end">
-          <HandUp />
-        </div>
-      </div>
       <Section className="bg-bruno-white">
+        <div className="absolute top-0 w-full z-10 flex h-full flex-col justify-between pointer-events-none">
+          <div className="w-full flex items-center">
+            <HandlSprinkle />
+          </div>
+          <div className="w-full flex items-center justify-end">
+            <HandUp />
+          </div>
+        </div>
         <Container>
           <div
             data-comp="hero"
@@ -43,9 +43,12 @@ const PlayroundPage = () => {
           </div>
         </Container>
       </Section>
-      <div className="bg-bruno-white">
+      <div className="bg-bruno-grey">
         <Container>
           <div className="grid z-20 mt-base grid-cols-1 relative py-base md:grid-cols-2 xl:grid-cols-3 gap-base  max-w-screen-2xl">
+            <PlaygroundCard />
+            <PlaygroundCard />
+            <PlaygroundCard />
             <PlaygroundCard />
             <PlaygroundCard />
             <PlaygroundCard />

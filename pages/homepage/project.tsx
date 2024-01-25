@@ -18,7 +18,7 @@ const HomepageProject = () => {
             </p>
           </div>
           <div className="grid w-full h-full py-base">
-            <ul className="flex gap-base sm:gap-0 flex-col sm:flex-row sm:h-[350px] relative  justify-center items-center -mb-1">
+            <ul className="flex gap-base sm:gap-0 flex-col sm:flex-row sm:h-[360px] relative  justify-center items-center -mb-1">
               <li className="sm:w-1/2 h-full flex items-end  relative group hover:w-full duration-300 grayscale hover:grayscale-0">
                 <Image
                   src="/images/crypto.jpg"

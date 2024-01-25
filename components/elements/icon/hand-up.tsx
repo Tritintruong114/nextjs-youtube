@@ -1,9 +1,7 @@
 const HandUp = () => {
   return (
     <svg
-      className=""
-      width="450"
-      height="450"
+      className="w-[33%]"
       viewBox="0 0 1309 671"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

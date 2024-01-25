@@ -8,7 +8,7 @@ const Section = ({ children, className }: SectionTypes) => {
   return (
     <section
       data-component-layout="section"
-      className={`py-xxl h-screen relative overflow-hidden ${className}`}
+      className={`py-xxl h-fit sm:h-screen relative overflow-hidden ${className}`}
     >
       {children}
     </section>

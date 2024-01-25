@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const PlaygroundCard = () => {
   return (
-    <div className="shrink h-fit p-base border  bg-[#ffffff]">
+    <div className="shrink h-fit p-base border  bg-bruno-white">
       <div className="relative h-[300px] w-full">
         <Image
           src="https://cdn.dribbble.com/userupload/5934311/file/original-9dd868a288cb625c2915941f021aacac.jpg?resize=2048x1536"
