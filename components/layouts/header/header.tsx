@@ -7,7 +7,7 @@ const MainHeader = () => {
   return (
     <header
       className={`sm:w-screen z-30 sm:block fixed hidden pt-base duration-500 ${
-        scrollDirection === "down" ? "-top-96" : "top-0"
+        scrollDirection === "down" ? "-top-96" : "bottom-6"
       }`}
     >
       <nav

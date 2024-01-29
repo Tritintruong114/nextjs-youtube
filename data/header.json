@@ -2,19 +2,23 @@
   "header": [
     {
       "label": "home",
-      "href": "/"
+      "href": "/",
+      "imageUrl": "https://i.pinimg.com/564x/f8/87/4d/f8874dd8cf64d3a180bbc358b0fb7103.jpg"
     },
     {
       "label": "playground",
-      "href": "/playround"
+      "href": "/playground",
+      "imageUrl": "https://i.pinimg.com/564x/6c/a7/6c/6ca76c2c69268e3527a54661d7b349a4.jpg"
     },
     {
       "label": "blog",
-      "href": "/blog"
+      "href": "/blog",
+      "imageUrl": "https://i.pinimg.com/564x/e4/20/b0/e420b0f785519f40940ddd3097389631.jpg"
     },
     {
       "label": "community",
-      "href": "/community"
+      "href": "/community",
+      "imageUrl": "https://i.pinimg.com/564x/a8/1a/80/a81a80f1bbd55f7d90fe91e8b9b1ecb7.jpg"
     }
   ]
 }
