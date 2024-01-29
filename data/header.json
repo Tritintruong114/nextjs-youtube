@@ -5,12 +5,12 @@
       "href": "/"
     },
     {
-      "label": "playground",
-      "href": "/playround"
-    },
-    {
       "label": "blog",
       "href": "/blog"
+    },
+    {
+      "label": "playground",
+      "href": "/playround"
     },
     {
       "label": "community",
