@@ -37,3 +37,7 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.clip_path-container {
+  clip-path: inset(40% 40% round 1rem);
+}

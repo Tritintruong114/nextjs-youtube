@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const MainMenu = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
   const closeMenu = () => {
     const timeline = gsap.timeline();
     const context = gsap.context(() => {
@@ -36,7 +35,6 @@ const MainMenu = () => {
       setToggleMenu(false);
     });
   };
-
   const openMenu = () => {
     const timeline = gsap.timeline();
     const context = gsap.context(() => {

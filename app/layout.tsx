@@ -1,4 +1,3 @@
-import MainMenu from "@/components/elements/menu/menu";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -21,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body data-barba="wrapper" className="bg-bruno-black">
         <div className="content_container">
-          <MainMenu />
+          {/* <MainMenu /> */}
           {children}
         </div>
       </body>
