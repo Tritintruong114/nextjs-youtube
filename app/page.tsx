@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
   return (
     <main className="rounded-3xl bg-white h-screen overflow-y-scroll no-scrollbar relative flex justify-center items-center">
-      <div className="clip_path-container absolute inset-0 bg-bruno-white mt-[100vh]">
+      <section className="clip_path-container absolute inset-0 bg-bruno-white mt-[100vh]">
         <div className="w-screen h-screen absolute">
           <video
             preload="none"
@@ -43,11 +43,9 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="relative z-10 px-base py-xxxl text-bruno-white h-full w-full text-center sm:text-left flex flex-col items-center sm:items-start justify-between">
-          <h1 className="text-[15vw] sm:text-[15vw] overflow-hidden leading-none font-bebas">
-            <p className="h-fit overflow-hidden">
-              <span className="hero_title relative -bottom-96">McLaren P1</span>
-            </p>
+        <div className="mx-auto max-w-screen-2xl relative z-10 px-base py-xxxl text-bruno-white h-full w-full text-center sm:text-left flex flex-col items-center sm:items-start justify-between">
+          <h1 className="text-[15vw] sm:text-[15vw] overflow-hidden h-fit leading-none font-bebas">
+            <span className="hero_title relative -bottom-96">McLaren P1</span>
           </h1>
           <div className="flex justify-between items-end w-full">
             <div>
@@ -58,14 +56,17 @@ export default function Home() {
               </p>
               <p className=" leading-none text-[3vw] h-fit overflow-hidden">
                 <span className="hero_title relative -bottom-96">
-                  find a ways{" "}
+                  find a ways.
                 </span>
               </p>
             </div>
-            <button className="text-[2vw]">Explore</button>
+            <button className="text-[2vw] group hover:text-black duration-300 border-2 border-bruno-white  px-base overflow-hidden rounded-full backdrop-blur-2xl">
+              <span className="w-0 group-hover:w-full rounded-full h-full group-hover:opacity-100 duration-300 bg-white absolute right-0 opacity-10"></span>
+              <span className="relative font-bebas pt-1">Explore</span>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
