@@ -2,6 +2,7 @@
 "use client";
 
 import ArrowRight from "@/public/icons/arrow-right";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -27,16 +28,18 @@ export default function Home() {
               "Creative Development"
             </span>
           </div>
-          {/* <div className="group-hover:opacity-100 opacity-0 bg-black px-1 text-white absolute w-full duration-150 -rotate-3">
+
+          <div className="group-hover:opacity-100 opacity-0 bg-black px-1 text-white absolute w-full duration-150 -rotate-3">
             <Marquee speed={15} autoFill>
-              <span className="px-1">-coming soon</span>
+              <span className="px-1 ">-coming soon</span>
             </Marquee>
-          </div> */}
+          </div>
+
           <button className="bg-white flex h-fit justify-center relative items-center group/button overflow-hidden text-black px-base py-1 rounded right-3 duration-300 group-hover:bottom-0 -bottom-24">
-            <span className="duration-150 leading-none group-hover/button:top-full relative">
+            <span className="duration-150 leading-none    group-hover/button:-translate-y-[120%] relative">
               Subscribe
             </span>
-            <span className="absolute text-amber-200 bottom-full  duration-150 group-hover/button:bottom-0 leading-none">
+            <span className="absolute text-black duration-150   group-hover/button:translate-y-0 translate-y-[120%] leading-none">
               Subscribe
             </span>
           </button>
