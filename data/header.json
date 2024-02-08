@@ -1,7 +1,7 @@
 {
   "header": [
     {
-      "label": "home",
+      "label": "works",
       "href": "/"
     },
     {
@@ -9,11 +9,19 @@
       "href": "/playround"
     },
     {
-      "label": "blog",
+      "label": "contact",
       "href": "/blog"
     },
     {
       "label": "community",
+      "href": "/community"
+    },
+    {
+      "label": "blog",
+      "href": "/community"
+    },
+    {
+      "label": "index",
       "href": "/community"
     }
   ]
