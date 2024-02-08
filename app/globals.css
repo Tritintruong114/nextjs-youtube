@@ -37,3 +37,7 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.menu_item.active {
+  transform: translate(100%, -100%);
+}
