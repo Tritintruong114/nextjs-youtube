@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="rounded-3xl h-screen w-screen overflow-y-scroll  no-scrollbar ">
-      <div className="fixed z-20 p-base">
+      <div className="fixed z-30 p-base">
         <button
           onClick={() => onToggleMenu()}
           className="text-bruno-grey bg-bruno-black rounded-full px-base py-1"
@@ -25,7 +25,7 @@ export default function Home() {
         </button>
       </div>
       <aside
-        className={`menu_container w-3/4 h-full absolute right-0 ${
+        className={`menu_container w-full sm:w-3/4 h-full absolute right-0 ${
           showMenu ? "opacity-0 delay-300 pointer-events-none" : ""
         }`}
       >
