@@ -5,6 +5,8 @@ import gsap from "gsap";
 
 export default function Home() {
   useGSAP(() => {
+    /* The code snippet you provided is using the GSAP (GreenSock Animation Platform) library to create
+    animations in a React component. Here's an explanation of what the code is doing: */
     const timeline = gsap.timeline();
     const context = gsap.context(() => {
       timeline
@@ -16,7 +18,7 @@ export default function Home() {
         .to(".clip_path-container", {
           ease: "power2.inOut",
           duration: 0.9,
-          clipPath: "inset(0% round 0rem)",
+          clipPath: "inset(0% round 1rem)",
         })
         .to(".hero_title", {
           top: 0,
@@ -25,12 +27,11 @@ export default function Home() {
           ease: "power2.inOut",
         });
     });
-
     return () => context.kill();
   }, []);
   return (
     <main className="rounded-3xl bg-white h-screen overflow-y-scroll no-scrollbar relative flex justify-center items-center">
-      <section className="clip_path-container absolute inset-0 bg-bruno-white mt-[100vh]">
+      <section className="clip_path-container absolute inset-0 bg-bruno-white mt-[100vh] ">
         <div className="w-screen h-screen absolute">
           <video
             preload="none"

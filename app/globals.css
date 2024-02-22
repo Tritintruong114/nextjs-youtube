@@ -41,3 +41,9 @@
 .clip_path-container {
   clip-path: inset(40% 40% round 1rem);
 }
+
+@media screen and (max-width: 400px) {
+  .clip_path-container {
+    clip-path: inset(40% 40% round 1rem);
+  }
+}
