@@ -25,7 +25,7 @@ export default function Home() {
         </li>
 
         {/* Second item */}
-        <li className="flex w-full items-center relative group h-fit overflow-hidden">
+        <li className="flex w-full items-center relative group h-fit overflow-hidden bg-bruno-black">
           <div className="flex group w-full">
             <span className="font-bebas w-full text-[6vw] leading-none relative pt-2 text-white/60 bg-black duration-300">
               "Creative Development"
@@ -40,7 +40,7 @@ export default function Home() {
             </Marquee>
           </div>
 
-          <button className="bg-bruno-white ease-in-out duration-300 font-bebas flex h-fit justify-center relative items-center group/button  text-black px-base py-2 rounded right-3  group-hover:bottom-0 -bottom-24">
+          <button className="bg-bruno-white  ease-in-out duration-300 font-bebas flex h-fit justify-center absolute items-center group/button  text-black px-1 py-1 sm:px-base sm:py-2 rounded right-3  group-hover:bottom-0 -bottom-24">
             <p className="flex flex-col h-fit overflow-hidden">
               <span className=" text-[12px] ease-in-out duration-300  sm:text-[1vw] leading-none group-hover/button:-translate-y-[200%] relative">
                 Subscribe
