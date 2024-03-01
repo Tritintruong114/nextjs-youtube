@@ -2,14 +2,33 @@
 "use client";
 
 import ArrowRight from "@/public/icons/arrow-right";
+import { useRef } from "react";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const playSound = () => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.2;
+      audioRef.current.play();
+    }
+  };
   return (
     <main className=" h-screen flex  w-screen justify-center items-center overflow-y-scroll no-scrollbar">
+      <audio
+        ref={audioRef}
+        id="heartbeat"
+        src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3"
+        preload="auto"
+      >
+        Your browser does not support the <code>audio</code> element.
+      </audio>
       <ul className="w-full">
-        {/* First item */}
-        <li className="flex w-full cursor-pointer items-center relative group h-fit overflow-hidden font-bebas">
+        <li
+          onMouseEnter={() => playSound()}
+          className="flex w-full cursor-pointer items-center relative group h-fit overflow-hidden font-bebas"
+        >
           <div className="flex group w-full">
             <span className="w-full text-[6vw] leading-none relative pt-2 text-white bg-black duration-300 group-hover:-translate-y-full">
               "Creative Development"
@@ -24,8 +43,10 @@ export default function Home() {
           </div>
         </li>
 
-        {/* Second item */}
-        <li className="flex w-full items-center relative group h-fit overflow-hidden bg-bruno-black">
+        <li
+          onMouseEnter={() => playSound()}
+          className="flex w-full items-center relative group h-fit overflow-hidden bg-bruno-black"
+        >
           <div className="flex group w-full">
             <span className="font-bebas w-full text-[6vw] leading-none relative pt-2 text-white/60 bg-black duration-300">
               "Creative Development"
