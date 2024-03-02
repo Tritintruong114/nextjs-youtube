@@ -11,10 +11,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {},
+      gridTemplateColumns: {},
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
       },
-
       inset: {},
       padding: {},
       height: {},
@@ -31,20 +31,9 @@ const config: Config = {
         "5xl": "clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem)",
         "6xl": "clamp(4.77rem, 7.48vw + 2.9rem, 8.88rem)",
       },
-      colors: {
-        bruno: {
-          grey: "#BFBDBE",
-          white: "#F2F2F2",
-          black: "#0D0D0D",
-          ximen: "#595659",
-          yellow: "#F2E85E",
-          "dark-grey": "#403C3F",
-        },
-      },
+      colors: {},
       width: {},
-      gap: {
-        base: "20px",
-      },
+      gap: {},
     },
   },
   plugins: [],

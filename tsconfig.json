@@ -30,7 +30,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "libs/notion/notion.js",
-    "libs/notion/notion.js"
+    "libs/notion/notion.js",
+    " prettier.config.js",
+    "prettier.config.js"
   ],
   "exclude": ["node_modules"]
 }
