@@ -1,5 +1,3 @@
-import MainHeader from "@/components/layouts/header/header";
-import NavigationComponent from "@/components/layouts/navigation-component/navigation-component";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -20,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-barba="wrapper" className="bg-bruno-black">
-        <MainHeader />
-        <NavigationComponent />
+      <body data-barba="wrapper" className="">
         <div className="content_container">{children}</div>
       </body>
     </html>
