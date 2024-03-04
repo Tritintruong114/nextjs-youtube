@@ -17,6 +17,7 @@
     "@notion-render/client": "^0.0.2",
     "@notion-render/hljs-plugin": "^0.0.2",
     "@notionhq/client": "^2.2.14",
+    "@portabletext/types": "^2.0.8",
     "@sanity/client": "^6.15.1",
     "@sanity/vision": "^3.30.1",
     "classnames": "^2.5.1",

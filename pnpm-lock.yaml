@@ -23,6 +23,9 @@ dependencies:
   '@notionhq/client':
     specifier: ^2.2.14
     version: 2.2.14
+  '@portabletext/types':
+    specifier: ^2.0.8
+    version: 2.0.8
   '@sanity/client':
     specifier: ^6.15.1
     version: 6.15.1

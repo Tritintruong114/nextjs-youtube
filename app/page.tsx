@@ -1,8 +1,10 @@
+import { RichTextComponents } from "@/components/elements/blocktext";
 import { getProfile } from "@/sanity/sanity.query";
 import type { ProfileType } from "@/types/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
+const myPortableTextComponents = {};
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
 
@@ -37,7 +39,10 @@ export default async function Home() {
                     height={320}
                   />
                   <div>
-                    <PortableText value={fullBio} />
+                    <PortableText
+                      value={fullBio}
+                      components={RichTextComponents}
+                    />
                   </div>
                 </div>
               </div>
