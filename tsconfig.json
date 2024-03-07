@@ -33,6 +33,6 @@
     "libs/notion/notion.js",
     " prettier.config.js",
     "prettier.config.js"
-  ],
+, "sanity-studio/sanity.cli.js"  ],
   "exclude": ["node_modules"]
 }

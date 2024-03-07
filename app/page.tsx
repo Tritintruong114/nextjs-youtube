@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main className="no-scrollbar">
-      <div className="h-screen w-screen flex justify-center items-center">
+      <div className="flex justify-center items-center">
         {profile.map((data, index) => {
           const {
             fullName,
