@@ -10,7 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "hero-background":
+          "url('https://cdn.dribbble.com/userupload/4270087/file/original-dd685e687e629f85a09d662b41578434.png?resize=1024x1024')",
+      },
       gridTemplateColumns: {},
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
