@@ -4,11 +4,11 @@ export default function Home() {
     <main className="no-scrollbar w-screen">
       <section
         id="section"
-        className="py-6 sm:py-24 max-h-[460px] h-screen sm:max-h-screen relative w-full justify-center flex items-center"
+        className="py-6 sm:py-24 max-h-[1120px] h-screen sm:max-h-screen relative w-full justify-center flex items-center"
       >
         <div id="container" className=" px-6 sm:px-24 w-full h-full">
           <Image
-            src="https://images.unsplash.com/photo-1678875445480-2536bd9c9bce?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/54098c96146799.5ea7f6d5a9050.jpg"
             alt="Hero Background cover"
             fill
             className="w-full h-full object-cover absolute"
@@ -34,7 +34,7 @@ export default function Home() {
       >
         <div id="container" className=" px-6 sm:px-24 w-full h-full">
           <div className="flex sm:flex-row sm:gap-64 flex-col h-full justify-center items-center">
-            <div className="flex flex-col h-full sm:justify-between sm:text-center">
+            <div className="flex flex-col h-full sm:justify-center sm:gap-12 sm:text-center">
               <p className="uppercase text-xl">
                 Watanabe Furniture for comfort living
               </p>
@@ -90,7 +90,7 @@ export default function Home() {
               See Our Works
             </button>
           </div>
-          <div className="w-full flex flex-col gap-6">
+          <div className="w-full flex flex-col gap-6 items-center justify-center">
             <Image
               src="https://i.pinimg.com/564x/9e/1d/bb/9e1dbbf9a91a309d14229f7b3dac4d64.jpg"
               alt=""
