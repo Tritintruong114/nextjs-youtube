@@ -9,6 +9,7 @@ const HeaderComponents = () => {
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
+
   return (
     <header className="flex justify-between items-center  px-6 absolute z-10 w-full ">
       <div className="flex justify-between w-full items-center py-3 border-b-2 border-white">
@@ -26,6 +27,7 @@ const HeaderComponents = () => {
               </li>
             );
           })}
+          c
         </ul>
         <div>
           <button
