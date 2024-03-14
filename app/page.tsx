@@ -123,8 +123,8 @@ export default function Home() {
         className=" overflow-hidden sm:h-screen sm:py-24 py-6 relative w-full justify-center flex items-center"
       >
         <div id="container" className=" px-6 sm:px-24 w-full h-full">
-          <div>
-            <h2 className="text-3xl">Our Expertise</h2>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-5xl font-bebas">Our Expertise</h2>
           </div>
           <ul className="w-full h-full gap-6 flex flex-col sm:flex-row justify-between items-center">
             <li className=" w-full sm:w-1/2 flex justify-center relative items-center h-[330px] sm:h-full bg-black group duration-300 hover:border-4 hover:border-black hover:rounded-xl">
