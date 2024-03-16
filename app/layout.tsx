@@ -1,5 +1,5 @@
 import FooterComponent from "@/components/footer";
-import HeaderComponents from "@/components/header";
+import HeaderComponent from "@/components/header";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -20,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-barba="wrapper" className="">
+      <body data-barba="wrapper">
         <div className="content_container">
-          <HeaderComponents />
+          <HeaderComponent />
           {children}
           <FooterComponent />
         </div>

@@ -1,36 +1,7 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-
 export default function Home() {
   return (
-    // <main className="no-scrollbar w-screen">
-    //   <section
-    //     id="section"
-    //     className="h-screen py-6 sm:py-24 max-h-[1120px] sm:max-h-screen relative w-full justify-center flex items-center"
-    //   >
-    //     <div id="container" className="w-full h-full sm:px-24 px-6">
-    //       <Image
-    //         src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/54098c96146799.5ea7f6d5a9050.jpg"
-    //         alt="Hero Background"
-    //         fill
-    //         className="w-full h-full object-cover absolute"
-    //       />
-    //       <div className="relative flex sm:flex-row flex-col-reverse items-start sm:items-end gap-3 xl:gap-0 sm:justify-between w-full bottom-0 h-full">
-    //         <button className="border-2 font-bebas text-white pt-1 hover:bg-white hover:text-black duration-300 text-lg  rounded-full px-9 py-1">
-    //           Explore
-    //         </button>
-    //         <div className=" flex flex-col">
-    //           <h1 className="font-bold text-4xl leading-none text-white font-bebas">
-    //             Furniture For Your Home
-    //           </h1>
-    //           <p className="text-white text-lg">
-    //             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    //           </p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </section>
-    // </main>
     <main className="no-scrollbar w-screen">
       <section
         id="section"
@@ -185,4 +156,44 @@ export default function Home() {
       </section>
     </main>
   );
+}
+
+//  const [showMenu, setShowMenu] = useState(false);
+
+//  const toggleMenu = () => {
+//    console.log("click");
+//    setShowMenu((prev) => !prev);
+//  };
+{
+  /* <header className="flex justify-between items-center  px-6 absolute z-10 w-full ">
+  <div className="flex justify-between w-full items-center py-3 border-b-2 border-white">
+    <Link href="/" className="font-bebas text-white text-xl">
+      Watanabe
+    </Link>
+
+    <ul
+      className={`flex flex-col duration-300 sm:flex-row absolute right-0 bg-black w-screen h-screen sm:h-fit sm:w-fit sm:top-0 sm:relative sm:bg-transparent gap-6 justify-center items-center ${showMenu ? "top-0" : "-top-[100vh]"}`}
+    >
+      {data.header.map((item, index) => {
+        return (
+          <li key={index} className="text-white text-base uppercase">
+            <Link href={item.href}>{item.label}</Link>
+          </li>
+        );
+      })}
+      c
+    </ul>
+    <div>
+      <button
+        className="text-white sm:hidden z-20 relative"
+        onClick={() => toggleMenu()}
+      >
+        {showMenu ? "Close" : "Menu"}
+      </button>
+      <button className="sm:block font-bebas pt-1 hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300">
+        Contact Us
+      </button>
+    </div>
+  </div>
+</header>; */
 }
