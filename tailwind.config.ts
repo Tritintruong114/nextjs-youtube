@@ -13,7 +13,7 @@ const config: Config = {
       backgroundImage: {},
       gridTemplateColumns: {},
       fontFamily: {
-        bebas: ["Bebas Neue", "sans-serif"],
+        man: ["Manrope", "sans-serif"],
       },
       inset: {},
       padding: {},
