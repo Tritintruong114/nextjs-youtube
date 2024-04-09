@@ -1,0 +1,25 @@
+{
+  "cardMockData": [
+    {
+      "name": "Loom",
+      "image": "https://cdn.dribbble.com/userupload/7444050/file/original-abd97e33f0f456d3b67109cf283149b6.png?resize=752x",
+      "services": [
+        {
+          "service": "Rebrand"
+        },
+        {
+          "service": "Content Creation"
+        },
+        {
+          "service": "Development"
+        },
+        {
+          "service": "Dashboard"
+        },
+        {
+          "service": "Motion"
+        }
+      ]
+    }
+  ]
+}

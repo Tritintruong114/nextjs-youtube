@@ -36,6 +36,6 @@ const config: Config = {
       gap: {},
     },
   },
-  plugins: [],
+  plugins: [require("@xpd/tailwind-3dtransforms")],
 };
 export default config;
