@@ -1,8 +1,8 @@
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import "./globals.css";
 import FooterComponent from "@/components/footer";
 import HeaderComponent from "@/components/header";
-import localFont from "next/font/local";
-import { Metadata } from "next/types";
-import "./globals.css";
 const myFont = localFont({
   src: "../public/HousttelySignature-GOonZ.ttf",
   variable: "--font-house",
