@@ -1,5 +1,5 @@
+import { groq } from "next-sanity";
 import { client } from "../lib/client";
-
 export type Post = {
   title?: string;
   slug?: {
@@ -10,7 +10,7 @@ export type Post = {
   publishedAt: string;
 };
 
-const getPostsQuery = `*[_type == "post"]{
+const getPostsQuery = groq`*[_type == "post"]{
   title,
   slug,
   "author": author->name,

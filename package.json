@@ -17,6 +17,7 @@
     "@notion-render/client": "^0.0.2",
     "@notion-render/hljs-plugin": "^0.0.2",
     "@notionhq/client": "^2.2.14",
+    "@sanity/icons": "^2.11.8",
     "@sanity/image-url": "^1.0.2",
     "@sanity/react-loader": "^1.9.6",
     "@sanity/vision": "^3.36.4",
@@ -47,6 +48,7 @@
     "plop": "^4.0.1",
     "postcss": "^8.4.33",
     "prettier": "^3.2.5",
+    "prettier-plugin-groq": "^0.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
