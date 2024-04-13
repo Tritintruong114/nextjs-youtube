@@ -4,11 +4,10 @@ import Image from "next/image";
 const BlogPage = async () => {
   const postsData: Post[] = await getPosts();
 
-  console.log(postsData);
   return (
     <section
       id="section"
-      className="py-6 sm:py-24 pt-24 max-h-[1120px] sm:h-screen sm:max-h-screen relative w-full justify-center flex items-center bg-black"
+      className="sm:py-24 py-6 sm:h-screen sm:max-h-screen relative w-full justify-center flex items-center bg-black"
     >
       <div id="container" className=" px-6 sm:px-24 w-full h-full">
         <div className="py-12">
