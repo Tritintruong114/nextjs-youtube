@@ -1,18 +1,22 @@
-import { SERVICES } from '@/constant/services'
-import { ContentType, getServicesPage, ImageType } from '@/sanity/queries/page'
-import Image from 'next/image'
-import Link from 'next/link'
-import Marquee from 'react-fast-marquee'
+import { SERVICES } from "@/constant/services";
+import { ContentType, getServicesPage, ImageType } from "@/sanity/queries/page";
+import Image from "next/image";
+import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 const ServicesPage = async () => {
-  const data = await getServicesPage(SERVICES.PATH)
+  const data = await getServicesPage(SERVICES.PATH);
 
-  const { Content, Heading, Gallery, CallToAction, Video, FormContact } = data
+  const { Content, Heading, Gallery, CallToAction, Video, FormContact } = data;
 
   return (
-    <main className="py-24 bg-black">
+    <section
+      id="section"
+      className="py-24  sm:h-screen sm:max-h-screen relative w-full justify-center flex items-center bg-black"
+    >
+      {" "}
       <div id="container" className=" px-6 sm:px-24 w-full h-full">
-        <div className="text-white text-5xl font-bebas">
+        <div className="text-white text-6xl font-bebas">
           <h1>{Heading}</h1>
         </div>
         <div className="md:grid md:grid-cols-3 gap-3 grid grid-cols-1">
@@ -36,7 +40,7 @@ const ServicesPage = async () => {
                   {CallToAction.title}
                 </Link>
               </div>
-            )
+            );
           })}
 
           <div className="col-span-1 md:col-span-3">
@@ -52,14 +56,14 @@ const ServicesPage = async () => {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                )
+                );
               })}
             </Marquee>
           </div>
         </div>
       </div>
-    </main>
-  )
-}
+    </section>
+  );
+};
 
-export default ServicesPage
+export default ServicesPage;

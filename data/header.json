@@ -15,6 +15,10 @@
     {
       "label": "services",
       "href": "/services"
+    },
+    {
+      "label": "gallery",
+      "href": "/gallery"
     }
   ]
 }

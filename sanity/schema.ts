@@ -8,6 +8,7 @@ import { heroType } from "./schemaTypes/heroType";
 import imageGalleryType from "./schemaTypes/imageGallery";
 import pageType from "./schemaTypes/pageType";
 import post from "./schemaTypes/post";
+import projectType from "./schemaTypes/projectType";
 import { promotionType } from "./schemaTypes/promotionType";
 import textWithIllustrationType from "./schemaTypes/textWithIllu";
 import { videoType } from "./schemaTypes/videoType";
@@ -25,5 +26,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     formType,
     heroType,
     promotionType,
+    projectType,
   ],
 };
