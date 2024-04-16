@@ -12,22 +12,22 @@ const ServicesPage = async () => {
   return (
     <section
       id="section"
-      className="py-24  sm:h-screen sm:max-h-screen relative w-full justify-center flex items-center bg-black"
+      className="py-24  relative w-full justify-center flex items-center bg-black"
     >
       {" "}
       <div id="container" className=" px-6 sm:px-24 w-full h-full">
         <div className="text-white text-6xl font-bebas">
           <h1>{Heading}</h1>
         </div>
-        <div className="md:grid md:grid-cols-3 gap-3 grid grid-cols-1">
+        <div className="md:grid sm:grid-cols-2 xl:grid-cols-3 gap-3 grid grid-cols-1">
           {Content.map((element: ContentType, index: number) => {
             return (
               <div
                 key={index}
-                className="text-white flex justify-between flex-col gap-3 col-span-1 p-6 border-white border-2"
+                className="text-white flex justify-between flex-col gap-3 col-span-2 xl:col-span-1 p-6 border-white border"
               >
                 <div>
-                  <h2 className="text-3xl font-bold leading-none">
+                  <h2 className="text-xl font-bebas font-bold leading-none">
                     {element.heading}
                   </h2>
                 </div>

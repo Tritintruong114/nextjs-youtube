@@ -103,3 +103,25 @@ export async function getWorksPage() {
     revalidate: new Date().getSeconds(),
   });
 }
+
+export async function getGalleryPage() {
+  const getPageQuery = groq`*[_type == "page"][slug == 'gallery'][0]{
+    'Heading':title,
+    slug,
+    
+     'Gallery':pageBuilder[][_type == "gallery"][0]{
+      _type,
+      'imageUrls':images[].asset->{
+        'url':url
+      }
+    },
+    
+
+  
+  
+}`;
+
+  return await client.fetch(getPageQuery, {
+    revalidate: new Date().getSeconds(),
+  });
+}
