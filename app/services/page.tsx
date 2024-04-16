@@ -10,20 +10,20 @@ const ServicesPage = async () => {
   const { Content, Heading, Gallery, CallToAction, Video, FormContact } = data;
 
   return (
-    <main className="py-24 bg-black">
+    <section className="py-24 relative w-full justify-center flex items-center bg-black">
       <div id="container" className=" px-6 sm:px-24 w-full h-full">
         <div className="text-white text-6xl font-bebas">
           <h1>{Heading}</h1>
         </div>
-        <div className="md:grid md:grid-cols-3 gap-3 grid grid-cols-1">
+        <div className="md:grid sm:grid-cols-2 xl:grid-cols-3 gap-3 grid grid-cols-1">
           {Content.map((element: ContentType, index: number) => {
             return (
               <div
                 key={index}
-                className="text-white flex justify-between flex-col gap-3 col-span-1 p-6 border-white border-2"
+                className="text-white flex justify-between flex-col gap-3 xl:col-span-1 col-span-2 p-6 border-white border-2"
               >
                 <div>
-                  <h2 className="text-3xl font-bold leading-none">
+                  <h2 className="text-xl font-bebas font-bold leading-none">
                     {element.heading}
                   </h2>
                 </div>
@@ -58,7 +58,7 @@ const ServicesPage = async () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
