@@ -12,7 +12,7 @@ const ServicesPage = async () => {
   return (
     <main className="py-24 bg-black">
       <div id="container" className=" px-6 sm:px-24 w-full h-full">
-        <div className="text-white text-5xl font-bebas">
+        <div className="text-white text-6xl font-bebas">
           <h1>{Heading}</h1>
         </div>
         <div className="md:grid md:grid-cols-3 gap-3 grid grid-cols-1">

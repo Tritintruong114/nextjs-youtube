@@ -11,6 +11,16 @@ export type ContentType = {
   };
 };
 
+export type ProjectType = {
+  type: string;
+  excerpt: string;
+  projectname: string;
+  tagline: string;
+  location: string;
+  url: string;
+  imageUrls: ImageType[];
+};
+
 export type ImageType = {
   url: string;
 };
@@ -54,6 +64,44 @@ export async function getServicesPage(slug: string) {
 
   }`;
 
+  return await client.fetch(getPageQuery, {
+    revalidate: new Date().getSeconds(),
+  });
+}
+
+export async function getWorksPage() {
+  const getPageQuery = groq`*[_type == "page"][slug == 'works'][0]{
+    'Heading':title,
+    slug,
+    'Hero':pageBuilder[][_type == "hero"][0]{
+      'heroImage':image.asset->url,
+      heading,
+      tagline
+    },
+    
+
+    'Content':pageBuilder[][_type == "project"]{
+      "type": _type,
+      excerpt,
+      tagline,
+      projectname,
+      location,
+      url,
+     'imageUrls':images[].asset->{
+        'url':url
+      }
+    },
+    
+      'CallToAction':pageBuilder[][_type == "callToAction"][0]{
+      _type == "callToAction" => @-> {
+      _type,
+      title,
+      label,
+      link
+    }
+  }
+  
+}`;
   return await client.fetch(getPageQuery, {
     revalidate: new Date().getSeconds(),
   });
