@@ -12,7 +12,7 @@ const HeaderComponent = () => {
   return (
     <header className="flex justify-between items-center px-6 absolute z-10 w-full">
       <div className=" flex justify-between w-full items-center py-3 border-b-2 border-white">
-        <Link href="/" className="font-bebas text-white text-xl">
+        <Link href="/" className="font-bebas text-white text-xl cursor-pointer">
           Watanabe
         </Link>
 
@@ -21,11 +21,14 @@ const HeaderComponent = () => {
         >
           {headerData.header.map((item, index) => {
             return (
-              <>
-                <li className="text-white text-base uppercase">
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              </>
+              <li
+                key={index}
+                className="text-white text-base uppercase cursor-pointer"
+              >
+                <Link href={item.href} className="">
+                  {item.label}
+                </Link>
+              </li>
             );
           })}
         </ul>

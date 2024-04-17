@@ -45,6 +45,14 @@ const pageType = defineType({
           name: "project",
           type: "project",
         }),
+        defineArrayMember({
+          name: "expertises",
+          type: "expertises",
+        }),
+        defineArrayMember({
+          name: "sectionImageOverlay",
+          type: "sectionImageOverlay",
+        }),
       ],
     }),
   ],

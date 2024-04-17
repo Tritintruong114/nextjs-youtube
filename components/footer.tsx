@@ -3,10 +3,13 @@ import Link from "next/link";
 
 const FooterComponent = () => {
   return (
-    <footer className="sm:h-screen sm:py-24 h-fit py-6 bg-black">
-      <div id="container" className=" px-6 sm:px-24 w-full h-full">
+    <footer className="sm:h-screen overflow-hidden py-24 bg-black">
+      <div
+        id="container"
+        className=" px-6 sm:px-24 overflow-hidden w-full h-full"
+      >
         <div className="w-full h-full justify-center items-center flex flex-col mb-6 sm:mb-0">
-          <p className="font-bebas leading-none text-6xl text-white">
+          <p className="font-bebas leading-none text-white text-[12vw]">
             Let's talk{" "}
           </p>
           <ul className="flex justify-center items-center sm:gap-6">
