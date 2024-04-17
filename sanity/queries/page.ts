@@ -23,6 +23,49 @@ export type ProjectType = {
 export type ImageType = {
   url: string;
 };
+export async function getHomepage() {
+  const getPageQuery = groq`*[_type == "page"][slug == 'home'][0]{
+    'Heading':title,
+    slug,
+    'Hero':pageBuilder[][_type == "hero"][0]{
+      'heroImage':image.asset->url,
+      heading,
+      tagline
+    },
+      'Content':pageBuilder[][_type == "textWithIllustration"][0]{
+      "type": _type,
+      excerpt,
+      tagline,
+      heading,
+      image
+    
+    },
+      'SectionImageOverlay':pageBuilder[][_type == "sectionImageOverlay"][0]{
+      "type": _type,
+      heading,
+      'imageOverlay':image.asset->url,
+  
+    },
+        'Expertises':pageBuilder[][_type == "expertises"]{
+      "type": _type,
+      excerpt,
+      heading,
+      'url':image.asset->url
+    },
+    
+      'Gallery':pageBuilder[][_type == "gallery"][0]{
+      _type,
+      'imageUrls':images[].asset->{
+        'url':url
+      }
+    },
+  
+}`;
+
+  return await client.fetch(getPageQuery, {
+    revalidate: new Date().getSeconds(),
+  });
+}
 
 export async function getServicesPage(slug: string) {
   const getPageQuery = groq`*[_type == "page" && slug.current == ${slug}][0]{
