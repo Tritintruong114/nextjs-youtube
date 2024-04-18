@@ -131,7 +131,8 @@ const WorksPage = async () => {
                 {CallToAction.title}
               </h2>
               <Link
-                href="/"
+                target="_blank"
+                href="https://calendly.com/truongtritinbee/get-a-quote"
                 className="px-6 font-bebas py-3 w-fit border-white border-2 text-xl hover:bg-white hover:text-black duration-300 text-white"
               >
                 {CallToAction.label}

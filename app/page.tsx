@@ -24,9 +24,11 @@ export default async function Home() {
             className="w-full h-full object-cover absolute"
           />
           <div className="flex sm:flex-row flex-col-reverse items-start sm:items-end gap-3 xl:gap-0 sm:justify-between w-full relative bottom-0 h-full">
-            <button className="border-2 font-bebas pt-1 text-white hover:bg-white hover:text-black text-lg duration-300 border-white rounded-full px-9 py-1">
-              Explore
-            </button>
+            <Link href="/works">
+              <button className="border-2 font-bebas pt-1 text-white hover:bg-white hover:text-black text-lg duration-300 border-white rounded-full px-9 py-1">
+                Explore
+              </button>
+            </Link>
             <div className="flex flex-col">
               <h2 className="font-bold text-4xl leading-none font-bebas text-white">
                 {Hero.heading}
@@ -85,9 +87,11 @@ export default async function Home() {
       >
         <div id="container" className="px-6 sm:px-24 w-full h-full">
           <div className="w-full relative mb-6 sm:mb-0">
-            <button className="sm:absolute z-10 top-0 left-0 border-2 border-black rounded-full px-3 py-1 hover:bg-black hover:text-white duration-300 font-bebas">
-              See Our Works
-            </button>
+            <Link href="/works">
+              <button className="sm:absolute z-10 top-0 left-0 border-2 border-black bg-white rounded-full px-3 py-1 hover:bg-black hover:text-white duration-300 font-bebas">
+                See Our Works
+              </button>
+            </Link>
           </div>
           <div className="w-full h-full items-center justify-center">
             <Marquee className="w-full h-full" autoFill speed={15}>

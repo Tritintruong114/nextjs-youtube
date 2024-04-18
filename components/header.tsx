@@ -36,9 +36,14 @@ const HeaderComponent = () => {
           >
             {showMenu ? "Close" : "Menu"}
           </button>
-          <button className="sm:block font-bebas hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300">
-            Contact Us
-          </button>
+          <Link
+            href="https://calendly.com/truongtritinbee/get-a-quote"
+            target="_blank"
+          >
+            <button className="sm:block font-bebas hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </header>
