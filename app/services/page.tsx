@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { SERVICES } from "@/constant/services";
 import { ContentType, getServicesPage, ImageType } from "@/sanity/queries/page";
 import Image from "next/image";
@@ -47,7 +49,7 @@ const ServicesPage = async () => {
             <Marquee className="h-full w-full" loop={50}>
               {Gallery.imageUrls?.map((image: ImageType, index: number) => {
                 return (
-                  <div className="h-[450px] w-full" key={index}>
+                  <div className="h-[450px] aspect-auto w-full" key={index}>
                     <Image
                       src={image.url}
                       alt="Images"
