@@ -5,16 +5,20 @@
       "href": "/"
     },
     {
-      "label": "playground",
-      "href": "/playround"
-    },
-    {
       "label": "blog",
       "href": "/blog"
     },
     {
-      "label": "community",
-      "href": "/community"
+      "label": "works",
+      "href": "/works"
+    },
+    {
+      "label": "services",
+      "href": "/services"
+    },
+    {
+      "label": "gallery",
+      "href": "/gallery"
     }
   ]
 }

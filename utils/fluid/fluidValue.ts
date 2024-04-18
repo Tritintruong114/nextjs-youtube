@@ -17,13 +17,13 @@ export const createFluidValue = (
   minSize: number,
   maxSize: number,
   minScreenSize: number = DEFAULT_MIN_SCREEN,
-  maxScreenSize: number = DEFAULT_MAX_SCREEN
+  maxScreenSize: number = DEFAULT_MAX_SCREEN,
 ) => {
   return `clamp(${pxToRem(minSize)}, ${getPreferredValue(
     minSize,
     maxSize,
     minScreenSize,
-    maxScreenSize
+    maxScreenSize,
   )}, ${pxToRem(maxSize)})`;
 };
 
@@ -34,14 +34,14 @@ const getPreferredValue = (
   minSize: number,
   maxSize: number,
   minScreenSize: number,
-  maxScreenSize: number
+  maxScreenSize: number,
 ) => {
   const vwCalc = cleanNumber(
-    (100 * (maxSize - minSize)) / (maxScreenSize - minScreenSize)
+    (100 * (maxSize - minSize)) / (maxScreenSize - minScreenSize),
   );
   const remCalc = cleanNumber(
     (minScreenSize * maxSize - maxScreenSize * minSize) /
-      (minScreenSize - maxScreenSize)
+      (minScreenSize - maxScreenSize),
   );
 
   return `${vwCalc}vw + ${pxToRem(remCalc)}`;

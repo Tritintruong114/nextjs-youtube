@@ -1,7 +1,7 @@
-import MainHeader from "@/components/layouts/header/header";
-import NavigationComponent from "@/components/layouts/navigation-component/navigation-component";
-import type { Metadata } from "next";
+import FooterComponent from "@/components/footer";
+import HeaderComponent from "@/components/header";
 import localFont from "next/font/local";
+import { Metadata } from "next/types";
 import "./globals.css";
 const myFont = localFont({
   src: "../public/HousttelySignature-GOonZ.ttf",
@@ -20,10 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-barba="wrapper" className="bg-bruno-black">
-        <MainHeader />
-        <NavigationComponent />
-        <div className="content_container">{children}</div>
+      <body data-barba="wrapper">
+        <div className="content_container">
+          <HeaderComponent />
+          {children}
+          <FooterComponent />
+        </div>
       </body>
     </html>
   );

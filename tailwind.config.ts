@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import { createFluidValue } from "./utils/fluid/fluidValue";
 
 const config: Config = {
   content: [
@@ -11,68 +10,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "hero-background":
+          "url('https://cdn.dribbble.com/userupload/4270087/file/original-dd685e687e629f85a09d662b41578434.png?resize=1024x1024')",
+      },
+      gridTemplateColumns: {},
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
       },
-
       inset: {},
-      padding: {
-        xxxl: "120px",
-        xxl: "90px",
-        xl: "60px",
-        base: "20px",
-        lg: "15px",
-        md: "12px",
-        sm: "9px",
-        xs: "6px",
-        xxs: "",
-        xxxs: "",
-      },
+      padding: {},
       height: {},
-      margin: {
-        xxxl: "120px",
-        xxl: "90px",
-        xl: "60px",
-        base: "20px",
-        lg: "15px",
-        md: "12px",
-        sm: "9px",
-        xs: "",
-        xxs: "",
-        xxxs: "",
-      },
+      margin: {},
       borderRadius: {},
       fontSize: {
-        "fluid-body-xl": createFluidValue(20, 30),
-        "fluid-body-xxl": createFluidValue(20, 54),
-        "fluid-body-lg": createFluidValue(18, 18),
-        "fluid-body-sm": createFluidValue(14, 14),
-        "fluid-h1": createFluidValue(48, 64),
-        "fluid-h2": createFluidValue(32, 48),
-        "fluid-h3": createFluidValue(24, 32),
-        "fluid-h4": createFluidValue(20, 24),
-        "fluid-h5": createFluidValue(20, 20),
-        "fluid-display-m": createFluidValue(60, 84),
-        "fluid-display-xl": createFluidValue(45, 140),
-        "fluid-display-2xl": createFluidValue(50, 190),
-        "fluid-display-3xl": createFluidValue(50, 270),
+        sm: "clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)",
+        base: "clamp(1rem, 0.34vw + 0.91rem, 1.19rem)",
+        lg: "clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem)",
+        xl: "clamp(1.56rem, 1vw + 1.31rem, 2.11rem)",
+        "2xl": "clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)",
+        "3xl": "clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem)",
+        "4xl": "clamp(3.05rem, 3.54vw + 2.17rem, 5rem)",
+        "5xl": "clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem)",
+        "6xl": "clamp(4.77rem, 7.48vw + 2.9rem, 8.88rem)",
       },
-      colors: {
-        bruno: {
-          grey: "#BFBDBE",
-          white: "#F2F2F2",
-          black: "#0D0D0D",
-          ximen: "#595659",
-          yellow: "#F2E85E",
-          "dark-grey": "#403C3F",
-        },
-      },
+      colors: {},
       width: {},
-      gap: {
-        base: "20px",
-      },
+      gap: {},
     },
   },
   plugins: [],
