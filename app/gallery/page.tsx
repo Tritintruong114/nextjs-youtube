@@ -4,7 +4,7 @@ import { getGalleryPage, ImageType } from "@/sanity/queries/page";
 import Image from "next/image";
 import Link from "next/link";
 
-export const randomColumns = () => {
+const randomColumns = () => {
   const columnSize = [
     "sm:row-span-1",
     "sm:col-span-3 row-span-1",

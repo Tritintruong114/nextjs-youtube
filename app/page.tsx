@@ -119,7 +119,7 @@ export default async function Home() {
             <h2 className="text-5xl font-bebas">Our Expertise</h2>
           </div>
           <div className="w-full h-full gap-6 flex flex-col sm:flex-row justify-between items-center">
-            {Expertises.map((expertise, index: number) => {
+            {Expertises.map((expertise: any, index: number) => {
               return (
                 <Link
                   key={index}
