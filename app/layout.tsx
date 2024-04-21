@@ -1,3 +1,4 @@
+import { Header } from "@/components";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -19,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body data-barba="wrapper" className="">
-        <div className="content_container">{children}</div>
+        <Header />
+        {children}
       </body>
     </html>
   );
