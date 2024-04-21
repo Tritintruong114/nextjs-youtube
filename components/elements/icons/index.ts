@@ -3,5 +3,8 @@ export * from "./Ev";
 export * from "./Hydro";
 export * from "./Logo";
 export * from "./Menu";
+export * from "./Renewable";
+export * from "./Save";
 export * from "./Solar";
+export * from "./User";
 export * from "./Wind";
