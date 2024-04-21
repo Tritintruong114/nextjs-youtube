@@ -38,7 +38,7 @@ const config: Config = {
         md: "clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem)",
         label: "clamp(1.56rem, 1vw + 1.31rem, 2.11rem)",
         "sub-title": "clamp(1rem, 2.38vw + 1.85rem, 1.25rem)",
-        title: "clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)",
+        title: "clamp(1.95rem, 1.56vw + 1.56rem, 4rem)",
         features: "clamp(3.05rem, 3.54vw + 2.17rem, 5rem)",
         section: "clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem)",
         hero: "clamp(4.77rem, 7.48vw + 2.9rem, 6rem)",
