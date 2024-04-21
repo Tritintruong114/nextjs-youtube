@@ -1,5 +1,6 @@
 import {
   AboutUs,
+  Blog,
   Features,
   Hero,
   Metrics,
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="p-4 bg-secondary-950">
         <NewLetter />
       </div>
+      <Blog />
     </main>
   );
 }
