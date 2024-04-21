@@ -8,12 +8,6 @@
   font-family: "Housettely";
   src: url("/public/HousttelySignature-GOonZ.ttf");
 }
-.rfm-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 /* Cursor component */
 .cursor {
