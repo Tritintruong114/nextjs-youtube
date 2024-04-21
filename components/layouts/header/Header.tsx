@@ -20,7 +20,7 @@ export const Header = () => {
     }
   }, [size.width]);
   return (
-    <header className="fixed border-b sm:border-none bg-secondary-950 sm:bg-transparent w-full py-6">
+    <header className="fixed border-b z-50 sm:border-none bg-secondary-950 sm:bg-transparent w-full py-6">
       <div className="container flex justify-between">
         <div className="flex items-center gap-10">
           <Link href="/" className="z-10">
