@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
-    <section className="bg-secondary-950 h-fit pt-48 flex flex-col gap-32">
+    <section className="bg-secondary-950 h-fit py-48 flex flex-col gap-32">
       <div className="container h-1/2 flex justify-center items-center">
         <div className="grid grid-cols-1 xl:grid-cols-2">
           <div className="text-white">
