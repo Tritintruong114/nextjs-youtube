@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import "./globals.css";
 
 export default function RootLayout({
@@ -11,6 +11,7 @@ export default function RootLayout({
       <body data-barba="wrapper" className="">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
