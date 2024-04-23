@@ -1,21 +1,19 @@
 "use client";
-import { useWindScreenowSize } from "@/hooks/useWindowSize";
+import { Heading, SubTitle } from "@/components/elements";
+import { Container, Section } from "@/components/layouts";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 
 export const Testimonials = () => {
-  const size = useWindScreenowSize();
   return (
-    <section className="py-48 bg-secondary-950 rounded-3xl overflow-hidden">
-      <div className="container flex-col flex items-center">
-        <div className="flex w-full text-white items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-3 w-3 bg-primary-300 block rounded-full" />
-          <span>Testimonials</span>
-        </div>
+    <Section className="bg-secondary-950 rounded-3xl">
+      <Container className="flex flex-col items-center">
+        <SubTitle subTitle="Testimonials" />
+
         <div className="flex w-full flex-col gap-4">
-          <h2 className="text-features leading-none text-white">
+          <Heading as="h2" className="text-section leading-none text-white">
             What our customers say{" "}
-          </h2>
+          </Heading>
         </div>
         <div className="mt-24">
           <Carousel
@@ -32,7 +30,7 @@ export const Testimonials = () => {
             centerSlidePercentage={20}
             infiniteLoop
             useKeyboardArrows
-            className="cursor-grabbing w-full"
+            className="cursor-grabbing w-full duration-300"
           >
             <div className="w-full shrink-0  sm:col-span-1 p-10 rounded-3xl bg-primary-300">
               <p className="text-left min-h-[180px]">
@@ -236,7 +234,7 @@ export const Testimonials = () => {
             </div>
           </Carousel>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

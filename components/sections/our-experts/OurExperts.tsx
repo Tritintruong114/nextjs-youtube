@@ -1,4 +1,4 @@
-import { Linkedln } from "@/components/elements";
+import { Heading, Linkedln, SubTitle } from "@/components/elements";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,16 +6,13 @@ export const OurExperts = () => {
   return (
     <section className="py-48 bg-secondary-950">
       <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-3 w-3 bg-primary-300 block rounded-full" />
-          <span>Our experts</span>
-        </div>
+        <SubTitle subTitle="Our experts" />
 
         <div>
           <div className="flex flex-col gap-4">
-            <h2 className="text-features leading-none text-white">
+            <Heading as="h2" className="text-section leading-none text-white">
               Meet our experts{" "}
-            </h2>
+            </Heading>
             <p className="text-neutral-400">
               Our team boasts top green energy experts, driving innovation in
               sustainability.{" "}

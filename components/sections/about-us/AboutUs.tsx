@@ -1,20 +1,17 @@
-import { Check } from "@/components/elements";
+import { Check, Heading, SubTitle } from "@/components/elements";
 import AboutUsCarousel from "./AboutUsCarousel";
 
 export const AboutUs = () => {
   return (
     <section className="py-48 bg-secondary-950">
       <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-2 w-2 bg-primary-300 block rounded-full" />
-          <span>About us</span>
-        </div>
+        <SubTitle subTitle="About us" />
 
         <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
           <div className="flex justify-center flex-col gap-6">
-            <h2 className="text-section leading-none text-white">
+            <Heading as="h2" className="text-section leading-none text-white">
               Committed to a sustainable future
-            </h2>
+            </Heading>
             <p className="text-white/80">
               As a pioneering force in the green energy sector, we ve been at
               the forefront of the transition to clean, renewable power sources.

@@ -1,13 +1,10 @@
-import { Ev } from "@/components/elements";
+import { Ev, SubTitle } from "@/components/elements";
 
 export const Features = () => {
   return (
     <section className="py-48 bg-beige-primary rounded-3xl">
       <div className="container">
-        <div className="flex items-center gap-2 border-b border-neutral-60 pb-4 sm:mb-14 mb-12">
-          <span className="h-2 w-2 bg-primary-300 rounded-full block" />
-          <span>Solutions</span>
-        </div>
+        <SubTitle subTitle="Solutions" className="text-primary-950" />
 
         <div>
           <div className="mb-12 sm:mb-24">

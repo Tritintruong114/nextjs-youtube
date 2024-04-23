@@ -1,13 +1,11 @@
+import { SubTitle } from "@/components/elements";
 import Image from "next/image";
 
 export const Blog = () => {
   return (
     <section className="py-48 bg-secondary-950">
       <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-3 w-3 bg-primary-300 block rounded-full" />
-          <span>Blog</span>
-        </div>
+        <SubTitle subTitle="Blog" />
 
         <div>
           <div className="w-full flex justify-between items-center">

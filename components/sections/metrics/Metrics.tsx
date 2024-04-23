@@ -1,13 +1,11 @@
+import { SubTitle } from "@/components/elements";
 import { Renewable } from "@/components/elements/icons/Renewable";
 
 export const Metrics = () => {
   return (
     <section className="py-48 bg-beige-primary rounded-3xl">
       <div className="container">
-        <div className="flex items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-3 w-3 bg-primary-300 block rounded-full" />
-          <span>Metrics</span>
-        </div>
+        <SubTitle subTitle="Metrics" className="text-primary-950" />
 
         <div>
           <div className="mb-12 sm:mb-24">
