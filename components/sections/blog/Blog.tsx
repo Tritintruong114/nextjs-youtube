@@ -1,16 +1,17 @@
+import { Heading, SubTitle } from "@/components/elements";
+import { Container, Section } from "@/components/layouts";
 import Image from "next/image";
 
 export const Blog = () => {
   return (
-    <section className="py-48 bg-secondary-950">
-      <div className="container">
-        <div className="flex text-white items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-          <span className="h-3 w-3 bg-primary-300 block rounded-full" />
-          <span>Blog</span>
-        </div>
+    <Section className=" bg-secondary-950">
+      <Container>
+        <SubTitle subTitle="Blog" />
         <div>
           <div className="w-full flex justify-between items-center">
-            <h2 className="text-section leading-none text-white">Blog</h2>
+            <Heading as="h2" className="text-section leading-none text-white">
+              Blog
+            </Heading>
             <button className="border px-6 py-3 rounded-full text-white">
               See all
             </button>
@@ -28,10 +29,10 @@ export const Blog = () => {
               </div>
               <div>
                 <div>
-                  <h3 className="text-white text-sub-title mb-4">
+                  <Heading as="h3" className="text-white text-sub-title mb-4">
                     Harnessing the Power of the Sun: Exploring the World of
                     Solar Energy
-                  </h3>
+                  </Heading>
                   <p className="text-neutral-400">
                     Solar energy is revolutionizing the way we power our world.
                     In this blog post,sustainable energy source for a brighter
@@ -65,10 +66,10 @@ export const Blog = () => {
               </div>
               <div>
                 <div>
-                  <h3 className="text-white text-sub-title mb-4">
+                  <Heading as="h3" className="text-white text-sub-title mb-4">
                     Harnessing the Power of the Sun: Exploring the World of
                     Solar Energy
-                  </h3>
+                  </Heading>
                   <p className="text-neutral-400">
                     Solar energy is revolutionizing the way we power our world.
                     In this blog post,sustainable energy source for a brighter
@@ -102,10 +103,10 @@ export const Blog = () => {
               </div>
               <div>
                 <div>
-                  <h3 className="text-white text-sub-title mb-4">
+                  <Heading as="h3" className="text-white text-sub-title mb-4">
                     Harnessing the Power of the Sun: Exploring the World of
                     Solar Energy
-                  </h3>
+                  </Heading>
                   <p className="text-neutral-400">
                     Solar energy is revolutionizing the way we power our world.
                     In this blog post,sustainable energy source for a brighter
@@ -139,10 +140,10 @@ export const Blog = () => {
               </div>
               <div>
                 <div>
-                  <h3 className="text-white text-sub-title mb-4">
+                  <Heading as="h3" className="text-white text-sub-title mb-4">
                     Harnessing the Power of the Sun: Exploring the World of
                     Solar Energy
-                  </h3>
+                  </Heading>
                   <p className="text-neutral-400">
                     Solar energy is revolutionizing the way we power our world.
                     In this blog post,sustainable energy source for a brighter
@@ -166,7 +167,7 @@ export const Blog = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };

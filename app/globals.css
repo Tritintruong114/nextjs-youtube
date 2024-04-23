@@ -32,3 +32,8 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.carousel .slide {
+  padding: 0px 8px;
+  min-width: none !important;
+}

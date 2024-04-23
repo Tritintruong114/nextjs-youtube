@@ -1,15 +1,17 @@
+import { Heading } from "@/components/elements";
+import { Container, Section } from "@/components/layouts";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
-    <section className="bg-secondary-950 h-fit py-48 flex flex-col gap-32">
-      <div className="container h-1/2 flex justify-center items-center">
+    <Section className="bg-secondary-950 h-fit flex flex-col gap-32">
+      <Container className="h-1/2 flex justify-center items-center">
         <div className="grid grid-cols-1 xl:grid-cols-2">
           <div className="text-white">
-            <h1 className="text-hero leading-none">
+            <Heading as="h1" className="text-hero leading-none">
               The Future of Green Energy
-            </h1>
+            </Heading>
           </div>
           <div className="mt-10 xl:mt-0">
             <p className="text-base text-white mb-10">
@@ -23,7 +25,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
+      </Container>
       <div className="w-full col-span-2 h-1/2">
         <Marquee autoFill>
           <div className="flex justify-center gap-6 items-start mx-3">
@@ -48,7 +50,7 @@ const Hero = () => {
           </div>
         </Marquee>
       </div>
-    </section>
+    </Section>
   );
 };
 
