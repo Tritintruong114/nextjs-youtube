@@ -1,10 +1,13 @@
 "use client";
 import { Heading, SubTitle } from "@/components/elements";
 import { Container, Section } from "@/components/layouts";
+import { useWindScreenowSize } from "@/hooks/useWindowSize";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 
 export const Testimonials = () => {
+  const size = useWindScreenowSize();
+  console.log(size.width);
   return (
     <Section className="bg-secondary-950 rounded-3xl">
       <Container className="flex flex-col items-center">
@@ -27,10 +30,10 @@ export const Testimonials = () => {
             emulateTouch
             showIndicators={false}
             centerMode
-            centerSlidePercentage={20}
+            centerSlidePercentage={size.width < 480 ? 18 : 20}
             infiniteLoop
             useKeyboardArrows
-            className="cursor-grabbing w-full duration-300"
+            className="cursor-grabbing sm:w-full duration-300"
           >
             <div className="w-full shrink-0  sm:col-span-1 p-10 rounded-3xl bg-primary-300">
               <p className="text-left min-h-[180px]">

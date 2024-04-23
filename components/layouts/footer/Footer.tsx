@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="p-4">
+    <div className="p-2 sm:p-4">
       <footer className="bg-secondary-950 rounded-3xl py-24 sm:py-48 relative overflow-hidden">
         <div className="absolute h-full top-0">
           <FooterBg />
