@@ -5,3 +5,4 @@ export * from "./hero";
 export * from "./metrics";
 export * from "./new-letter";
 export * from "./our-experts";
+export * from "./testimonials";

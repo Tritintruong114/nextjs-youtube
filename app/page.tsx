@@ -6,6 +6,7 @@ import {
   Metrics,
   NewLetter,
   OurExperts,
+  Testimonials,
 } from "@/components";
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <AboutUs />
       <Metrics />
+      <div className="p-4 bg-neutral-50">
+        <Testimonials />
+      </div>
       <OurExperts />
       <div className="p-4 bg-secondary-950">
         <NewLetter />
