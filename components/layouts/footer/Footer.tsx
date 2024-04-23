@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="absolute h-full top-0">
           <FooterBg />
         </div>
-        <div className="container">
+        <div className="container relative">
           <div className="grid sm:grid-cols-6 xl:grid-cols-12 gap-8">
             <div className="col-span-3">
               <Logo />
@@ -61,7 +61,7 @@ export const Footer = () => {
               </div>
               <div className="col-span-3 grid gap-4 sm:col-end-10">
                 <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 h-[48px] w-[48px] flex items-center justify-center rounded-full">
+                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
                     <Facebook />
                   </span>
                   <p className="text-white font-medium">
@@ -69,7 +69,7 @@ export const Footer = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 h-[48px] w-[48px] flex items-center justify-center rounded-full">
+                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
                     <Facebook />
                   </span>
                   <p className="text-white font-medium">
@@ -77,7 +77,7 @@ export const Footer = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 h-[48px] w-[48px] flex items-center justify-center rounded-full">
+                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
                     <Facebook />
                   </span>
                   <p className="text-white font-medium">

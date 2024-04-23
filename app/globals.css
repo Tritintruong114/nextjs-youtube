@@ -31,12 +31,8 @@
     scrollbar-width: none; /* Firefox */
   }
 }
-.carousel {
-  height: 100%;
-}
-.slider-wrapper {
-  height: 100%;
-}
-.slider {
-  height: 100%;
+
+.carousel .slide {
+  padding: 0px 8px;
+  min-width: none !important;
 }

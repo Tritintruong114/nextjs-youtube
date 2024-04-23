@@ -7,18 +7,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 function AboutUsCarousel() {
   return (
     <Carousel
-      autoPlay
-      infiniteLoop
-      showStatus={false}
-      showArrows={false}
       swipeable
-      transitionTime={300}
-      useKeyboardArrows
-      showThumbs={false}
-      interval={3000}
-      className="h-full"
+      stopOnHover
+      showStatus={false}
+      interval={6000}
+      showArrows={false}
+      useKeyboardArrows={true}
+      emulateTouch
+      infiniteLoop
+      autoPlay
+      centerSlidePercentage={90}
+      className="h-full cursor-grabbing"
     >
-      <div className="w-full h-[450px] sm:h-[700px]">
+      <div className="w-full h-[450px]  sm:h-[700px]">
         <Image
           src="/images/hero3.png"
           alt="About Us Image"
@@ -27,7 +28,7 @@ function AboutUsCarousel() {
           height={530}
         />
       </div>
-      <div className="w-full h-[450px] sm:h-[700px]">
+      <div className="w-full h-[450px]  sm:h-[700px]">
         <Image
           src="/images/hero3.png"
           alt="About Us Image"
@@ -36,7 +37,7 @@ function AboutUsCarousel() {
           height={530}
         />
       </div>
-      <div className="w-full h-[450px] sm:h-[700px]">
+      <div className="w-full h-[450px]  sm:h-[700px]">
         <Image
           src="/images/hero3.png"
           alt="About Us Image"
