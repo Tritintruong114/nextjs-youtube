@@ -10,7 +10,7 @@ export const Blog = () => {
         </div>
         <div>
           <div className="w-full flex justify-between items-center">
-            <h2 className="text-features leading-none text-white">Blog</h2>
+            <h2 className="text-section leading-none text-white">Blog</h2>
             <button className="border px-6 py-3 rounded-full text-white">
               See all
             </button>
