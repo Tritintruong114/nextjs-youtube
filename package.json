@@ -17,6 +17,7 @@
     "@notion-render/client": "^0.0.2",
     "@notion-render/hljs-plugin": "^0.0.2",
     "@notionhq/client": "^2.2.14",
+    "@zegocloud/zego-uikit-prebuilt": "^2.2.1",
     "classnames": "^2.5.1",
     "clsx": "^2.1.0",
     "gsap": "^3.12.5",
